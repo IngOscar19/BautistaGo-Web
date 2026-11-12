@@ -1,0 +1,20 @@
+{
+  "name": "bautistago-web",
+  "version": "0.0.0",
+  "private": true,
+  "description": "BautistaGo — Panel Administrador y Pantalla de Despacho (Next.js PWA)",
+  "license": "UNLICENSED",
+  "packageManager": "pnpm@12.18.0",
+  "type": "module",
+  "scripts": {
+    "dev": "turbo run dev",
+    "dev:admin": "pnpm --filter admin dev",
+    "dev:kitchen": "pnpm --filter kitchen dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check"
+  },
+  "devDependencies": {
+    "turbo": "^2.11.10"
+  }
+}
