@@ -92,34 +92,30 @@ export function ProductFormModal({
       const result = await optimizeImage(file, 900, 900, 0.82);
       setOptimizedResult(result);
 
-      // 2. Subir archivo al endpoint de almacenamiento estático
-      try {
-        const formData = new FormData();
-        formData.append('file', result.file);
+      // 2. Subir archivo al endpoint de almacenamiento en la nube (Vercel Blob)
+      const formData = new FormData();
+      formData.append('file', result.file);
 
-        const res = await fetch('/api/upload', {
-          method: 'POST',
-          body: formData,
-        });
+      const res = await fetch('/api/upload', {
+        method: 'POST',
+        body: formData,
+      });
 
-        if (res.ok) {
-          const data = await res.json();
-          if (data.url) {
-            setImageUrl(data.url);
-            return;
-          }
-        }
-      } catch {
-        // Si el upload fallara por red o entorno aislado, usamos como fallback
-        // el dataUrl WebP ultraligero que pesa menos de 40KB
+      if (!res.ok) {
+        const errPayload = await res.json().catch(() => null);
+        throw new Error(errPayload?.error || 'No fue posible guardar la imagen en el servidor.');
       }
 
-      // Fallback seguro: WebP optimizado de alta compresión
-      setImageUrl(result.dataUrl);
+      const data = await res.json();
+      if (!data.url) {
+        throw new Error('El servidor no devolvió una URL válida para la imagen.');
+      }
+
+      setImageUrl(data.url);
     } catch (err: any) {
       setErrors((prev) => ({
         ...prev,
-        imageUrl: err.message || 'No fue posible optimizar la imagen seleccionada.',
+        imageUrl: err.message || 'No fue posible optimizar o subir la imagen seleccionada.',
       }));
     } finally {
       setIsOptimizing(false);
@@ -165,8 +161,8 @@ export function ProductFormModal({
     if (!price || isNaN(numPrice) || numPrice <= 0) {
       newErrors.price = 'El precio debe ser un número positivo mayor a 0.';
     }
-    if (imageUrl.trim() && !/^https?:\/\/.+/.test(imageUrl.trim()) && !imageUrl.startsWith('data:image/')) {
-      newErrors.imageUrl = 'La URL o archivo de imagen no tiene un formato válido.';
+    if (imageUrl.trim() && !/^https?:\/\/.+/.test(imageUrl.trim())) {
+      newErrors.imageUrl = 'La URL de la imagen debe ser un enlace web válido (https://...).';
     }
 
     setErrors(newErrors);
