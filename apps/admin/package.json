@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3000",
-    "build": "next build",
+    "build": "next build --webpack",
     "start": "next start -p 3000",
     "lint": "eslint",
     "type-check": "tsc --noEmit"
@@ -14,6 +14,7 @@
     "@bautistago/ui": "workspace:*",
     "@bautistago/ws-client": "workspace:*",
     "axios": "^1.21.1",
+    "lucide-react": "^1.73.0",
     "next": "16.4.6",
     "react": "19.3.0",
     "react-dom": "19.3.0",

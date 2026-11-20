@@ -1,0 +1,16 @@
+{
+  "name": "BautistaGo Admin",
+  "short_name": "BautistaAdmin",
+  "description": "Panel de administración y control operativo de Carnitas Bautista",
+  "start_url": "/dashboard",
+  "display": "standalone",
+  "background_color": "#fcf9f8",
+  "theme_color": "#005dac",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}

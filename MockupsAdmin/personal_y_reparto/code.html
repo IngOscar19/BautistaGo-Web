@@ -1,0 +1,548 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-container": "#fffdff", "error": "#ba1a1a", "on-secondary-fixed-variant": "#93000d", "tertiary-fixed": "#ffdf9e", "on-tertiary-fixed": "#261a00", "surface-container": "#f0eded", "on-secondary-container": "#fffbff", "primary-fixed": "#d4e3ff", "on-error": "#ffffff", "on-error-container": "#93000a", "outline": "#717783", "inverse-surface": "#303030", "on-surface-variant": "#414752", "surface": "#fcf9f8", "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "on-surface": "#1b1c1c", "background": "#fcf9f8", "tertiary": "#765800", "secondary-container": "#db322f", "on-primary-fixed-variant": "#004786", "error-container": "#ffdad6", "outline-variant": "#c1c6d4", "secondary": "#b7131a", "surface-container-low": "#f6f3f2", "surface-container-highest": "#e5e2e1", "tertiary-container": "#956f00", "primary-container": "#1976d2", "surface-bright": "#fcf9f8", "on-tertiary-fixed-variant": "#5b4300", "surface-container-high": "#eae7e7", "on-secondary-fixed": "#410002", "on-tertiary-container": "#fffdff", "on-background": "#1b1c1c", "surface-dim": "#dcd9d9", "secondary-fixed": "#ffdad6", "primary": "#005dac", "inverse-primary": "#a5c8ff", "secondary-fixed-dim": "#ffb4ac", "inverse-on-surface": "#f3f0ef", "primary-fixed-dim": "#a5c8ff", "on-primary-fixed": "#001c3a", "surface-variant": "#e5e2e1", "tertiary-fixed-dim": "#fabd00", "surface-tint": "#005faf" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-desktop": "1.5rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter": "1rem", "margin": "1rem", "margin-desktop": "2rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-xl": "2rem" }, "fontFamily": { "body-sm": [ "Work Sans" ], "display-lg": [ "Montserrat" ], "body-lg": [ "Work Sans" ], "headline-sm": [ "Montserrat" ], "headline-lg": [ "Montserrat" ], "display-lg-mobile": [ "Montserrat" ], "label-lg": [ "Montserrat" ], "body-md": [ "Work Sans" ], "label-sm": [ "Montserrat" ], "label-md": [ "Montserrat" ], "headline-md": [ "Montserrat" ] }, "fontSize": { "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "display-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "500" } ], "headline-sm": [ "18px", { "lineHeight": "24px", "fontWeight": "600" } ], "headline-lg": [ "26px", { "lineHeight": "32px", "fontWeight": "700" } ], "display-lg-mobile": [ "30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "800" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "headline-md": [ "22px", { "lineHeight": "28px", "fontWeight": "700" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col flex-1 min-h-0"><div class="px-space-lg pt-space-lg pb-space-md flex items-center gap-space-md"><div class="relative flex-shrink-0"><img alt="Profile" class="w-10 h-10 rounded-full object-cover shadow-[0_2px_8px_-2px_rgba(33,33,33,0.12)]" src="https://lh3.googleusercontent.com/aida/AEtjO1XegK1CiDf_9HLum6p6gxZ25R44MGTZbjY6A5Fd3pLsN72II-ri9EOa6_F0zryMq3Kf4aLjTabrxpVmvQc43yIAPumX3A8H_RHYg91Bpo2A0VM_JngMAFh_BltnrojiRieKLTm7DZu7hG31mn0W1vN1OvNmfzjnRg0jI7cBvC_kkfr0I2PSmK9Y-BU6rQmnNJtwHXhK0uA0YpfPGkNgQR_haGhYu1wKZy1cvFkeskdhrmacyWIpBYWlFtlbRkRgRucKXkH2rrUppQ"><span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-primary rounded-full ring-2 ring-surface-container-low"></span></div><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-surface truncate">BautistaGo</span><div class="flex items-center gap-space-xs mt-0.5"><span class="inline-block px-space-xs py-0.5 bg-secondary text-on-secondary rounded font-label-sm text-label-sm uppercase tracking-wide">Propietario / Master</span></div></div></div><div class="px-space-md py-space-xs"><div class="px-space-sm py-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Operación y Gestión</div></div><nav class="flex-1 px-space-md space-y-space-xs overflow-y-auto" data-active-classes="bg-primary-container text-on-primary-container font-label-lg rounded-lg shadow-[0_2px_8px_-2px_rgba(25,118,210,0.25)]"><a class="flex items-center gap-space-md px-space-md py-space-md rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-lg text-label-lg transition-all" data-path="dashboard-analitico" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span>Dashboard Analítico</span></a><a class="flex items-center justify-between px-space-md py-space-md rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-lg text-label-lg transition-all" data-path="pedidos-en-vivo" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Pedidos en Vivo</span></div><span class="px-space-xs py-0.5 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded-full animate-pulse">14</span></a><a class="flex items-center gap-space-md px-space-md py-space-md rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-lg text-label-lg transition-all" data-path="catalogo-y-precios" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Catálogo y Precios</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-md transition-all bg-primary-container text-on-primary-container font-label-lg rounded-lg shadow-[0_2px_8px_-2px_rgba(25,118,210,0.25)]" data-path="personal-y-reparto" href="#"><span class="material-symbols-outlined text-[20px]">two_wheeler</span><span>Personal y Reparto</span></a><a class="flex items-center gap-space-md px-space-md py-space-md rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-lg text-label-lg transition-all" data-path="reportes-y-cortes-de-caja" href="#"><span class="material-symbols-outlined text-[20px]">point_of_sale</span><span>Reportes y Cortes</span></a></nav></div><div class="p-space-md bg-surface-container m-space-md rounded-xl"><div class="flex items-center justify-between mb-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Sucursal Activa</span><span class="w-2 h-2 rounded-full bg-primary"></span></div><div class="font-headline-sm text-label-lg text-on-surface truncate">Matriz Centro</div><div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5 mt-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span>En servicio • 3 cazos activos</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full h-10 pl-10 pr-4 bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Buscar folio, cliente, producto, empleado..." type="text"></div></div><div class="flex items-center gap-space-lg"><div class="hidden xl:flex items-center gap-space-sm"><div class="flex items-center gap-2 px-space-md py-1 bg-surface-container-lowest rounded-full shadow-[0_1px_3px_rgba(33,33,33,0.04)]"><span class="material-symbols-outlined text-primary text-[18px]">payments</span><span class="font-body-sm text-body-sm text-on-surface-variant">Hoy:</span><span class="font-label-md text-label-md text-on-surface">$18,420 MXN</span></div><div class="flex items-center gap-2 px-space-md py-1 bg-surface-container-lowest rounded-full shadow-[0_1px_3px_rgba(33,33,33,0.04)]"><span class="material-symbols-outlined text-secondary text-[18px]">local_shipping</span><span class="font-body-sm text-body-sm text-on-surface-variant">Activos:</span><span class="font-label-md text-label-md text-on-surface">14</span></div><div class="flex items-center gap-2 px-space-md py-1 bg-surface-container-lowest rounded-full shadow-[0_1px_3px_rgba(33,33,33,0.04)]"><span class="material-symbols-outlined text-tertiary-container text-[18px]">timer</span><span class="font-body-sm text-body-sm text-on-surface-variant">Prom:</span><span class="font-label-md text-label-md text-on-surface">22 min</span></div></div><div class="flex items-center gap-space-sm pl-space-md"><button class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded-lg transition-colors" title="Alerta sonora en vivo" type="button"><span class="material-symbols-outlined text-[20px]">volume_up</span></button><div class="relative"><button class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded-lg transition-colors" title="Notificaciones" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></button></div><div class="flex items-center gap-space-sm pl-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container" src="https://lh3.googleusercontent.com/aida/AEtjO1XegK1CiDf_9HLum6p6gxZ25R44MGTZbjY6A5Fd3pLsN72II-ri9EOa6_F0zryMq3Kf4aLjTabrxpVmvQc43yIAPumX3A8H_RHYg91Bpo2A0VM_JngMAFh_BltnrojiRieKLTm7DZu7hG31mn0W1vN1OvNmfzjnRg0jI7cBvC_kkfr0I2PSmK9Y-BU6rQmnNJtwHXhK0uA0YpfPGkNgQR_haGhYu1wKZy1cvFkeskdhrmacyWIpBYWlFtlbRkRgRucKXkH2rrUppQ"><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface">Don Román Bautista</span><span class="font-body-sm text-body-sm text-on-surface-variant">Dueño &amp; Fundador</span></div><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div></div></div></header><main class="relative pt-16 w-full px-gutter-desktop py-space-lg bg-background"><div class="flex flex-col w-full">
+<!-- Top Quick Overview / KPI Section -->
+<section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-lg mb-space-lg">
+<!-- Total Staff Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_2px_8px_-2px_rgba(33,33,33,0.06),0_1px_3px_rgba(33,33,33,0.04)] relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Personal en Turno</span>
+<span class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</span>
+</div>
+<div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-display-lg text-on-surface">12</span>
+<span class="font-label-md text-label-md text-on-surface-variant">colaboradores</span>
+</div>
+<div class="flex items-center gap-space-sm mt-space-sm pt-space-sm bg-surface-container-low px-space-sm py-1.5 rounded-lg text-on-surface-variant">
+<span class="font-body-sm text-body-sm font-semibold text-primary">4 Cocina</span>
+<span class="text-outline-variant">•</span>
+<span class="font-body-sm text-body-sm font-semibold text-secondary">6 Reparto</span>
+<span class="text-outline-variant">•</span>
+<span class="font-body-sm text-body-sm font-semibold text-tertiary-container">2 Mostrador</span>
+</div>
+</div>
+</div>
+<!-- Active Couriers Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_2px_8px_-2px_rgba(33,33,33,0.06),0_1px_3px_rgba(33,33,33,0.04)] relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">En Ruta Activa</span>
+<span class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">two_wheeler</span>
+</span>
+</div>
+<div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-display-lg text-secondary">5</span>
+<span class="font-label-md text-label-md text-on-surface-variant">repartidores rodando</span>
+</div>
+<div class="flex items-center justify-between mt-space-sm pt-space-sm bg-surface-container-low px-space-sm py-1.5 rounded-lg">
+<span class="font-body-sm text-body-sm text-on-surface-variant">En Espera en Base:</span>
+<span class="font-label-md text-label-md text-primary font-bold">1 disponible</span>
+</div>
+</div>
+</div>
+<!-- Cash in Street Transit -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_2px_8px_-2px_rgba(33,33,33,0.06),0_1px_3px_rgba(33,33,33,0.04)] relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Efectivo en Calle</span>
+<span class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary-container">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+</span>
+</div>
+<div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-display-lg text-on-surface">$4,860</span>
+<span class="font-label-md text-label-md text-on-surface-variant">MXN</span>
+</div>
+<div class="flex items-center gap-1.5 mt-space-sm pt-space-sm text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-tertiary text-[16px]">verified</span>
+<span>Sin límites de corte excedidos</span>
+</div>
+</div>
+</div>
+<!-- Efficiency & Pacing Indicator -->
+<div class="bg-primary-container text-on-primary-container p-space-lg rounded-xl shadow-[0_8px_24px_-4px_rgba(25,118,210,0.22)] relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-primary-container/80">Tiempo Prom. Cazo-Despacho</span>
+<span class="material-symbols-outlined text-tertiary-fixed text-[24px]">electric_bolt</span>
+</div>
+<div class="my-space-xs">
+<span class="font-headline-lg text-display-lg font-extrabold tracking-tight">18.4 min</span>
+<p class="font-body-sm text-body-sm text-on-primary-container/85 mt-0.5">Desempeño óptimo en hora pico</p>
+</div>
+<div class="w-full bg-on-primary-container/20 rounded-full h-1.5 overflow-hidden">
+<div class="bg-tertiary-fixed h-full rounded-full" style="width: 82%"></div>
+</div>
+</div>
+</section>
+<!-- Secondary Actions and Segment Tabs Bar -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-[0_2px_8px_-2px_rgba(33,33,33,0.06)] mb-space-lg flex flex-col lg:flex-row items-center justify-between gap-space-md">
+<!-- Internal Tab Selector -->
+<div class="flex items-center bg-surface-container-low p-1 rounded-lg w-full lg:w-auto overflow-x-auto">
+<button class="flex items-center gap-2 px-space-md py-2 rounded font-label-md text-label-md bg-surface-container-lowest text-primary shadow-[0_1px_3px_rgba(0,0,0,0.08)] whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[18px]">groups</span>
+<span>Equipo y Colaboradores</span>
+<span class="px-1.5 py-0.2 bg-primary-fixed text-on-primary-fixed-variant rounded-full text-label-sm font-bold">12</span>
+</button>
+<button class="flex items-center gap-2 px-space-md py-2 rounded font-label-md text-label-md text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">electric_moped</span>
+<span>Flota &amp; Cajas Térmicas</span>
+<span class="px-1.5 py-0.2 bg-surface-container-high text-on-surface-variant rounded-full text-label-sm">8 Motos</span>
+</button>
+<button class="flex items-center gap-2 px-space-md py-2 rounded font-label-md text-label-md text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+<span>Cortes de Efectivo</span>
+</button>
+</div>
+<!-- Right Action Buttons -->
+<div class="flex items-center gap-space-sm w-full lg:w-auto justify-end">
+<button class="flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">admin_panel_settings</span>
+<span>Roles y Permisos (RBAC)</span>
+</button>
+<button class="flex items-center gap-2 px-space-lg py-2.5 rounded-lg bg-secondary hover:bg-secondary-container text-on-secondary font-label-lg text-label-lg shadow-[0_4px_12px_rgba(183,19,26,0.25)] transition-transform active:scale-[0.98]" id="btnOpenDrawer" type="button">
+<span class="material-symbols-outlined text-[20px]">person_add</span>
+<span>+ Dar de Alta Colaborador</span>
+</button>
+</div>
+</div>
+<!-- Main Content Grid: Personnel Table + Visible Inline Creation/Drawer Panel -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: Collaborative Directory & Real-time Roster (8 cols) -->
+<div class="xl:col-span-8 space-y-space-md">
+<!-- Filter Chips Row -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-[0_1px_3px_rgba(33,33,33,0.04)] flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs overflow-x-auto">
+<button class="px-space-md py-1.5 rounded-full font-label-md text-label-md bg-primary text-on-primary" type="button">
+            Todos (12)
+          </button>
+<button class="px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-colors" type="button">
+            Cocina / Cazo (4)
+          </button>
+<button class="px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-colors" type="button">
+            Repartidores (6)
+          </button>
+<button class="px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-colors" type="button">
+            Mostrador / Caja (2)
+          </button>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span class="font-body-sm text-body-sm font-medium">Ordenar por Actividad</span>
+</div>
+</div>
+<!-- Staff List Container -->
+<div class="space-y-space-sm">
+<!-- CARD 1: Pablito Bautista (Star Courier) -->
+<div class="bg-surface-container-lowest p-space-md md:p-space-lg rounded-xl shadow-[0_2px_8px_-2px_rgba(33,33,33,0.06),0_1px_3px_rgba(33,33,33,0.04)] transition-all hover:shadow-[0_8px_20px_-4px_rgba(25,118,210,0.12)]">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<!-- Left Info & Mascot Avatar -->
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative flex-shrink-0">
+<img class="w-16 h-16 rounded-full object-cover shadow-[0_4px_12px_rgba(0,0,0,0.08)] bg-tertiary-fixed" data-alt="Playful vector cartoon illustration of Pablito Bautista, a friendly cartoon pig rider with red safety helmet and goggles, wearing blue jacket, delivering tacos on a yellow vintage Italian scooter with blue insulated food delivery box reading BautistaGo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZqsnDssm0-X5YVA63bXuDqq1QPIlLXvhBs-WH8j_aWTNrnDAiZO0AMAl_JheVyWgFpNOFz-4B5i6Kk2nynZ7ao00zj_j2Dyh03IWFclJGvep1H_kge1K-yISu1pJDkxYv9eTRLYNabgM9kGS0AWxtZsf0Lozcq9VbVtfcGJqzgqk5A3up7dcr3i6MJA013pPrD-MnQeD88Ch94yPb2OwPSRs97IhEd5oa-f03pKw">
+<span class="absolute -bottom-1 -right-1 w-5 h-5 bg-secondary rounded-full flex items-center justify-center text-on-secondary shadow-sm">
+<span class="material-symbols-outlined text-[13px]">sports_motorsports</span>
+</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Pablito Bautista</h3>
+<span class="px-2 py-0.5 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full font-label-sm text-label-sm uppercase font-bold tracking-wide">Repartidor Oficial Estrella</span>
+</div>
+<div class="flex items-center gap-space-sm mt-1 text-on-surface-variant flex-wrap font-body-sm text-body-sm">
+<span class="flex items-center gap-1 font-semibold text-primary">
+<span class="material-symbols-outlined text-[16px]">moped</span>
+                    Vespa BTO-44
+                  </span>
+<span>•</span>
+<span>Caja Térmica #01 (Azul Real)</span>
+<span>•</span>
+<span class="flex items-center gap-1 text-tertiary-container font-bold">
+<span class="material-symbols-outlined text-[15px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+                    4.95 (142 reseñas)
+                  </span>
+</div>
+</div>
+</div>
+<!-- Switch & Quick Toggle -->
+<div class="flex items-center gap-space-md self-end md:self-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-label-sm text-label-sm uppercase bg-secondary-fixed text-on-secondary-fixed-variant animate-pulse font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                En Ruta (#BAU-8942)
+              </span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+<!-- Bottom Operational Sub-Bar -->
+<div class="mt-space-md pt-space-sm grid grid-cols-2 sm:grid-cols-4 gap-space-sm bg-surface-container-low p-space-sm rounded-lg">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Entregas Hoy</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">14 pedidos</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Efectivo en Mano</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">$835 MXN</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Tiempo En Ruta</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">9 min</span>
+</div>
+<div class="flex items-center justify-end gap-1">
+<button class="p-2 bg-primary-container text-on-primary-container hover:bg-primary rounded-lg transition-colors flex items-center gap-1 text-label-sm font-semibold" title="Ver tracking en mapa" type="button">
+<span class="material-symbols-outlined text-[16px]">pin_drop</span>
+<span>Rastrear</span>
+</button>
+<button class="p-2 bg-surface-container-highest hover:bg-surface-container text-on-surface rounded-lg transition-colors" title="Llamar o avisar" type="button">
+<span class="material-symbols-outlined text-[16px]">call</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 2: Juan Mendoza "El Güero" (Maestro del Cazo) -->
+<div class="bg-surface-container-lowest p-space-md md:p-space-lg rounded-xl shadow-[0_2px_8px_-2px_rgba(33,33,33,0.06),0_1px_3px_rgba(33,33,33,0.04)] transition-all hover:shadow-[0_8px_20px_-4px_rgba(25,118,210,0.12)]">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative flex-shrink-0">
+<img class="w-16 h-16 rounded-full object-cover shadow-[0_4px_12px_rgba(0,0,0,0.08)]" data-alt="Portrait photography of Juan Mendoza, an experienced Mexican taquero artisan carnitas master chef wearing an immaculate white chef apron, black skullcap, smiling warmly in a rustic traditional kitchen stainless steel environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8OPXaNOrV-bmOAvFWCeqesUBBmY804GqiQV1TInT-MVLLz-tUdZQXQvmbcbYD09nwp2T7LBZGWyItrAxFuivm_qYOJ3KLaoUvUeu5l8uJeMPlOxjJbf2VNpg80Cqhp4Z9qwMaEbtzv2A-6CwFbSf7GHFjLhaweOUVzuY1zt2_OLradiTXKgXvDUoBdVpDTDtelAoeJoPhRpzrZUry2FqQvn8vT5jD_77uYMgv-hc">
+<span class="absolute -bottom-1 -right-1 w-5 h-5 bg-tertiary-container rounded-full flex items-center justify-center text-on-tertiary-container shadow-sm">
+<span class="material-symbols-outlined text-[13px]">soup_kitchen</span>
+</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Juan Mendoza "El Güero"</h3>
+<span class="px-2 py-0.5 bg-tertiary-fixed text-on-tertiary-fixed rounded-full font-label-sm text-label-sm uppercase font-bold tracking-wide">Maestro del Cazo Principal</span>
+</div>
+<div class="flex items-center gap-space-sm mt-1 text-on-surface-variant flex-wrap font-body-sm text-body-sm">
+<span class="flex items-center gap-1 font-semibold text-tertiary-container">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                    Turno: 07:00 AM – 04:00 PM
+                  </span>
+<span>•</span>
+<span>Cazos asignados: Cazo 1 (Maciza/Costilla) &amp; Cazo 2 (Surtida)</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md self-end md:self-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-label-sm text-label-sm uppercase bg-primary-fixed text-on-primary-fixed-variant font-bold">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                En Cazo Matriz (Activo)
+              </span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm grid grid-cols-2 sm:grid-cols-4 gap-space-sm bg-surface-container-low p-space-sm rounded-lg">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Carga Procesada</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">65.5 kg hoy</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Temp. Promedio</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">94°C Óptimo</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Merma Registrada</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">1.8% (Baja)</span>
+</div>
+<div class="flex items-center justify-end gap-1">
+<button class="p-2 bg-surface-container-highest hover:bg-surface-container text-on-surface rounded-lg transition-colors flex items-center gap-1 text-label-sm font-semibold" type="button">
+<span class="material-symbols-outlined text-[16px]">skillet</span>
+<span>Bitácora Cazo</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 3: Toño Ramírez (Repartidor Express) -->
+<div class="bg-surface-container-lowest p-space-md md:p-space-lg rounded-xl shadow-[0_2px_8px_-2px_rgba(33,33,33,0.06),0_1px_3px_rgba(33,33,33,0.04)] transition-all hover:shadow-[0_8px_20px_-4px_rgba(25,118,210,0.12)]">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative flex-shrink-0">
+<img class="w-16 h-16 rounded-full object-cover shadow-[0_4px_12px_rgba(0,0,0,0.08)]" data-alt="Close up portrait photo of a cheerful young Mexican motorcycle delivery driver wearing a sporty black jacket and bright yellow branded delivery polo shirt, standing next to a Honda Cargo motorcycle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANqbkkCdQFVOtFw3WMkjhcr7i2a8t_AjB2olMOQzlb4MQZmaHDKZmEpQGs9jIrVvow_zxvgj5fOlQUegUmaGhpwUxpN2R-PS_RtTTCC1eW3zKfytb8EMvDl98KU42Jd5vCuqEuD38UlcSKWvxc-WKTah6dFOYfuZlHHEZIOVCHFumJ1pK982Mnwi7hBk07islqlAlZLXK1oukqovE-1jVjbivFpxZr2YE6XR1TjxY">
+<span class="absolute -bottom-1 -right-1 w-5 h-5 bg-secondary rounded-full flex items-center justify-center text-on-secondary shadow-sm">
+<span class="material-symbols-outlined text-[13px]">sports_motorsports</span>
+</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Toño Ramírez</h3>
+<span class="px-2 py-0.5 bg-surface-container-highest text-on-surface-variant rounded-full font-label-sm text-label-sm uppercase font-bold tracking-wide">Repartidor Express</span>
+</div>
+<div class="flex items-center gap-space-sm mt-1 text-on-surface-variant flex-wrap font-body-sm text-body-sm">
+<span class="flex items-center gap-1 font-semibold text-primary">
+<span class="material-symbols-outlined text-[16px]">moped</span>
+                    Honda Cargo BTO-12
+                  </span>
+<span>•</span>
+<span>Caja Térmica #04</span>
+<span>•</span>
+<span class="flex items-center gap-1 text-tertiary-container font-bold">
+<span class="material-symbols-outlined text-[15px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+                    4.88
+                  </span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md self-end md:self-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-label-sm text-label-sm uppercase bg-surface-container-high text-primary font-bold">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+                Disponible en Base
+              </span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm grid grid-cols-2 sm:grid-cols-4 gap-space-sm bg-surface-container-low p-space-sm rounded-lg">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Entregas Hoy</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">9 pedidos</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Efectivo en Mano</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">$0 MXN (Al corriente)</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Estado Batería Celular</span>
+<span class="font-headline-sm text-headline-sm text-primary">88% ⚡</span>
+</div>
+<div class="flex items-center justify-end gap-1">
+<button class="p-2 bg-secondary text-on-secondary hover:bg-secondary-container rounded-lg transition-colors flex items-center gap-1 text-label-sm font-semibold" type="button">
+<span class="material-symbols-outlined text-[16px]">send</span>
+<span>Asignar Pedido</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 4: Lupita Sánchez (Cajera y Despacho) -->
+<div class="bg-surface-container-lowest p-space-md md:p-space-lg rounded-xl shadow-[0_2px_8px_-2px_rgba(33,33,33,0.06),0_1px_3px_rgba(33,33,33,0.04)] transition-all hover:shadow-[0_8px_20px_-4px_rgba(25,118,210,0.12)]">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative flex-shrink-0">
+<img class="w-16 h-16 rounded-full object-cover shadow-[0_4px_12px_rgba(0,0,0,0.08)]" data-alt="Portrait photography of Lupita Sanchez, an energetic Mexican cashier and point of sale manager at a modern taco restaurant, wearing black headset and modern red apron, friendly expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC45pUVRs2D052YObrNHfL8q5kEQDDUPOdF8_0oHm-WSSOgih9EAZ1KonatVpBoYDyzq7jk2QZZnsoo7IV_G6WX8BMQfvtUuYSmQB73307RcluUhFnU5v-T-hkW7XX-TLxWZz7rum4ilBlOwtydlpM8O2hfr--GyByUL8UeEww9DiUi-UfO1iJmlGYR29_1UDQasOualUIdrIPACiETK7dAzzlcGElYzR7UIHokxUw">
+<span class="absolute -bottom-1 -right-1 w-5 h-5 bg-primary rounded-full flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-[13px]">point_of_sale</span>
+</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Lupita Sánchez</h3>
+<span class="px-2 py-0.5 bg-primary-fixed text-on-primary-fixed-variant rounded-full font-label-sm text-label-sm uppercase font-bold tracking-wide">Cajera &amp; Despacho Matriz</span>
+</div>
+<div class="flex items-center gap-space-sm mt-1 text-on-surface-variant flex-wrap font-body-sm text-body-sm">
+<span class="flex items-center gap-1 font-semibold text-primary">
+<span class="material-symbols-outlined text-[16px]">desktop_windows</span>
+                    Terminal: Caja 01
+                  </span>
+<span>•</span>
+<span>Turno Matutino: 08:00 AM – 04:30 PM</span>
+<span>•</span>
+<span>Folios facturados hoy: 58</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md self-end md:self-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-label-sm text-label-sm uppercase bg-surface-container-high text-on-surface font-bold">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                En Turno Activo
+              </span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm grid grid-cols-2 sm:grid-cols-4 gap-space-sm bg-surface-container-low p-space-sm rounded-lg">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Corte Parcial</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">$12,740 MXN</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Cobros con Tarjeta</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">64%</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Precisión en Caja</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">100% Cuadrado</span>
+</div>
+<div class="flex items-center justify-end gap-1">
+<button class="p-2 bg-surface-container-highest hover:bg-surface-container text-on-surface rounded-lg transition-colors flex items-center gap-1 text-label-sm font-semibold" type="button">
+<span class="material-symbols-outlined text-[16px]">receipt</span>
+<span>Ver Arqueo</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Fleet Readiness Visual Bar -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_2px_8px_-2px_rgba(33,33,33,0.06)] flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary-container">
+<span class="material-symbols-outlined text-[28px]">electric_scooter</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-label-lg text-on-surface">Capacidad Logística al Momento</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">5 de 6 motos en campo. Tiempo promedio de entrega: 22 minutos por radio de 6km.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="px-space-md py-1 bg-surface-container-high rounded-full font-label-md text-label-md text-on-surface">
+            🔥 Pico de demanda previsto: 02:00 PM
+          </span>
+</div>
+</div>
+</div>
+<!-- Right Column: Alta / Edición de Colaborador (Drawer / Sidepanel - 4 cols) -->
+<div class="xl:col-span-4 bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_8px_24px_-4px_rgba(25,118,210,0.12),0_4px_12px_rgba(33,33,33,0.06)] sticky top-20" id="staffDrawer">
+<!-- Drawer Header -->
+<div class="flex items-center justify-between pb-space-md border-b-0 mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-8 h-8 rounded-lg bg-secondary-fixed text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">person_add</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Alta de Colaborador</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Expediente y Credenciales PWA</span>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface p-1 rounded-md bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Registration Form -->
+<form class="space-y-space-md" onsubmit="event.preventDefault();">
+<!-- Photo and Role Header -->
+<div class="flex items-center gap-space-md p-space-sm bg-surface-container-low rounded-lg">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest flex flex-col items-center justify-center text-outline cursor-pointer hover:bg-surface-container transition-colors relative overflow-hidden group">
+<span class="material-symbols-outlined text-[22px] group-hover:scale-110 transition-transform">add_a_photo</span>
+<span class="font-label-sm text-[9px] uppercase mt-0.5 font-bold">Foto</span>
+</div>
+<div class="flex-1 min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Tipo de Personal</span>
+<select class="w-full mt-1 bg-surface-container-lowest font-label-md text-label-md text-on-surface p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all cursor-pointer" id="roleSelector">
+<option selected="" value="repartidor">🛵 Repartidor en Scooter</option>
+<option value="cazo">👨‍🍳 Cocina / Maestro de Cazo</option>
+<option value="mostrador">💻 Mostrador / Cajero POS</option>
+<option value="admin">⭐ Administrador de Turno</option>
+</select>
+</div>
+</div>
+<!-- Personal Info Fields -->
+<div class="space-y-space-sm">
+<div>
+<label class="font-label-md text-label-md text-on-surface block mb-1">Nombre Completo</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">badge</span>
+<input class="w-full h-11 pl-10 pr-3 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Ej. Carlos 'El Charro' Mendoza" type="text">
+</div>
+</div>
+<div>
+<label class="font-label-md text-label-md text-on-surface block mb-1">Teléfono Móvil (WhatsApp)</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">call</span>
+<input class="w-full h-11 pl-10 pr-3 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" placeholder="+52 (443) 291-8832" type="tel">
+</div>
+</div>
+</div>
+<!-- Dynamic Delivery Section (Repartidor specifics) -->
+<div class="p-space-md bg-secondary-fixed/20 rounded-xl space-y-space-sm transition-all" id="deliveryFields">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-secondary font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">two_wheeler</span>
+              Equipamiento de Reparto
+            </span>
+<span class="font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed-variant px-2 py-0.5 rounded-full font-bold">Activo</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Placas Scooter</label>
+<input class="w-full h-10 px-3 bg-surface-container-lowest font-label-md text-label-md text-on-surface uppercase rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="BTO-59" type="text">
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Caja Térmica</label>
+<input class="w-full h-10 px-3 bg-surface-container-lowest font-label-md text-label-md text-on-surface rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Caja #05 Azul" type="text">
+</div>
+</div>
+<div>
+<div class="flex justify-between items-center mb-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Límite Efectivo en Mano</label>
+<span class="font-label-md text-label-md text-secondary font-bold">$3,000 MXN</span>
+</div>
+<input class="w-full accent-secondary cursor-pointer h-2 bg-surface-container-highest rounded-lg" max="5000" min="1000" step="500" type="range" value="3000">
+<span class="font-body-sm text-[11px] text-on-surface-variant block mt-1">Alerta automática para retorno a base y depósito en caja.</span>
+</div>
+</div>
+<!-- PWA Mobile Access Credentials -->
+<div class="p-space-md bg-primary-fixed/20 rounded-xl space-y-space-sm">
+<div class="flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[18px]">smartphone</span>
+<span class="font-label-md text-label-md font-bold">Acceso a App BautistaGo Móvil</span>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Correo Electrónico de Acceso</label>
+<input class="w-full h-10 px-3 bg-surface-container-lowest font-body-md text-body-md text-on-surface rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="reparto.carlos@bautistago.mx" type="email">
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">PIN Rápido (4 dígitos)</label>
+<input class="w-full h-10 px-3 bg-surface-container-lowest font-headline-sm text-headline-sm tracking-widest text-center text-on-surface rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20" maxlength="4" placeholder="••••" type="password">
+</div>
+<div class="flex flex-col justify-end">
+<button class="h-10 px-2 bg-primary text-on-primary rounded-lg font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1 hover:bg-primary-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">autorenew</span>
+<span>Generar PIN</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Submit and Save Action Button -->
+<div class="pt-space-xs">
+<button class="w-full py-3.5 bg-secondary hover:bg-secondary-container text-on-secondary font-label-lg text-label-lg rounded-xl shadow-[0_8px_20px_-4px_rgba(183,19,26,0.3)] transition-transform active:scale-[0.98] flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined text-[20px]">save</span>
+<span>Guardar y Enviar Acceso PWA</span>
+</button>
+<span class="block text-center font-body-sm text-[11px] text-on-surface-variant mt-2">
+            Se enviará SMS y WhatsApp con el enlace de descarga rápida PWA.
+          </span>
+</div>
+</form>
+</div>
+</div>
+<!-- Interactive JavaScript logic for dynamic role inputs and quick drawer toggles -->
+<script>
+    (function initStaffManager() {
+      const roleSelector = document.getElementById('roleSelector');
+      const deliveryFields = document.getElementById('deliveryFields');
+      const staffDrawer = document.getElementById('staffDrawer');
+      const btnOpenDrawer = document.getElementById('btnOpenDrawer');
+
+      if (roleSelector && deliveryFields) {
+        roleSelector.addEventListener('change', (e) => {
+          if (e.target.value === 'repartidor') {
+            deliveryFields.classList.remove('hidden');
+          } else {
+            deliveryFields.classList.add('hidden');
+          }
+        });
+      }
+
+      if (btnOpenDrawer && staffDrawer) {
+        btnOpenDrawer.addEventListener('click', () => {
+          staffDrawer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          staffDrawer.classList.add('ring-4', 'ring-primary-container/20');
+          setTimeout(() => {
+            staffDrawer.classList.remove('ring-4', 'ring-primary-container/20');
+          }, 1500);
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>

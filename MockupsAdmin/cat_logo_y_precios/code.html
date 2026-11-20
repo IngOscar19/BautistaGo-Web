@@ -1,0 +1,794 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-container": "#fffdff", "error": "#ba1a1a", "on-secondary-fixed-variant": "#93000d", "tertiary-fixed": "#ffdf9e", "on-tertiary-fixed": "#261a00", "surface-container": "#f0eded", "on-secondary-container": "#fffbff", "primary-fixed": "#d4e3ff", "on-error": "#ffffff", "on-error-container": "#93000a", "outline": "#717783", "inverse-surface": "#303030", "on-surface-variant": "#414752", "surface": "#fcf9f8", "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "on-surface": "#1b1c1c", "background": "#fcf9f8", "tertiary": "#765800", "secondary-container": "#db322f", "on-primary-fixed-variant": "#004786", "error-container": "#ffdad6", "outline-variant": "#c1c6d4", "secondary": "#b7131a", "surface-container-low": "#f6f3f2", "surface-container-highest": "#e5e2e1", "tertiary-container": "#956f00", "primary-container": "#1976d2", "surface-bright": "#fcf9f8", "on-tertiary-fixed-variant": "#5b4300", "surface-container-high": "#eae7e7", "on-secondary-fixed": "#410002", "on-tertiary-container": "#fffdff", "on-background": "#1b1c1c", "surface-dim": "#dcd9d9", "secondary-fixed": "#ffdad6", "primary": "#005dac", "inverse-primary": "#a5c8ff", "secondary-fixed-dim": "#ffb4ac", "inverse-on-surface": "#f3f0ef", "primary-fixed-dim": "#a5c8ff", "on-primary-fixed": "#001c3a", "surface-variant": "#e5e2e1", "tertiary-fixed-dim": "#fabd00", "surface-tint": "#005faf" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-desktop": "1.5rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter": "1rem", "margin": "1rem", "margin-desktop": "2rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-xl": "2rem" }, "fontFamily": { "body-sm": [ "Work Sans" ], "display-lg": [ "Montserrat" ], "body-lg": [ "Work Sans" ], "headline-sm": [ "Montserrat" ], "headline-lg": [ "Montserrat" ], "display-lg-mobile": [ "Montserrat" ], "label-lg": [ "Montserrat" ], "body-md": [ "Work Sans" ], "label-sm": [ "Montserrat" ], "label-md": [ "Montserrat" ], "headline-md": [ "Montserrat" ] }, "fontSize": { "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "display-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "500" } ], "headline-sm": [ "18px", { "lineHeight": "24px", "fontWeight": "600" } ], "headline-lg": [ "26px", { "lineHeight": "32px", "fontWeight": "700" } ], "display-lg-mobile": [ "30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "800" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "headline-md": [ "22px", { "lineHeight": "28px", "fontWeight": "700" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col flex-1 min-h-0"><div class="px-space-lg pt-space-lg pb-space-md flex items-center gap-space-md"><div class="relative flex-shrink-0"><img alt="Profile" class="w-10 h-10 rounded-full object-cover shadow-[0_2px_8px_-2px_rgba(33,33,33,0.12)]" src="https://lh3.googleusercontent.com/aida/AEtjO1XegK1CiDf_9HLum6p6gxZ25R44MGTZbjY6A5Fd3pLsN72II-ri9EOa6_F0zryMq3Kf4aLjTabrxpVmvQc43yIAPumX3A8H_RHYg91Bpo2A0VM_JngMAFh_BltnrojiRieKLTm7DZu7hG31mn0W1vN1OvNmfzjnRg0jI7cBvC_kkfr0I2PSmK9Y-BU6rQmnNJtwHXhK0uA0YpfPGkNgQR_haGhYu1wKZy1cvFkeskdhrmacyWIpBYWlFtlbRkRgRucKXkH2rrUppQ"><span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-primary rounded-full ring-2 ring-surface-container-low"></span></div><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-surface truncate">BautistaGo</span><div class="flex items-center gap-space-xs mt-0.5"><span class="inline-block px-space-xs py-0.5 bg-secondary text-on-secondary rounded font-label-sm text-label-sm uppercase tracking-wide">Propietario / Master</span></div></div></div><div class="px-space-md py-space-xs"><div class="px-space-sm py-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Operación y Gestión</div></div><nav class="flex-1 px-space-md space-y-space-xs overflow-y-auto" data-active-classes="bg-primary-container text-on-primary-container font-label-lg rounded-lg shadow-[0_2px_8px_-2px_rgba(25,118,210,0.25)]"><a class="flex items-center gap-space-md px-space-md py-space-md rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-lg text-label-lg transition-all" data-path="dashboard-analitico" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span>Dashboard Analítico</span></a><a class="flex items-center justify-between px-space-md py-space-md rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-lg text-label-lg transition-all" data-path="pedidos-en-vivo" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Pedidos en Vivo</span></div><span class="px-space-xs py-0.5 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded-full animate-pulse">14</span></a><a class="flex items-center gap-space-md px-space-md py-space-md rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-lg text-label-lg transition-all" data-path="catalogo-y-precios" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Catálogo y Precios</span></a><a class="flex items-center gap-space-md px-space-md py-space-md rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-lg text-label-lg transition-all" data-path="personal-y-reparto" href="#"><span class="material-symbols-outlined text-[20px]">two_wheeler</span><span>Personal y Reparto</span></a><a class="flex items-center gap-space-md px-space-md py-space-md rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-lg text-label-lg transition-all" data-path="reportes-y-cortes-de-caja" href="#"><span class="material-symbols-outlined text-[20px]">point_of_sale</span><span>Reportes y Cortes</span></a></nav></div><div class="p-space-md bg-surface-container m-space-md rounded-xl"><div class="flex items-center justify-between mb-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Sucursal Activa</span><span class="w-2 h-2 rounded-full bg-primary"></span></div><div class="font-headline-sm text-label-lg text-on-surface truncate">Matriz Centro</div><div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5 mt-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span>En servicio • 3 cazos activos</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full h-10 pl-10 pr-4 bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Buscar folio, cliente, producto, empleado..." type="text"></div></div><div class="flex items-center gap-space-lg"><div class="hidden xl:flex items-center gap-space-sm"><div class="flex items-center gap-2 px-space-md py-1 bg-surface-container-lowest rounded-full shadow-[0_1px_3px_rgba(33,33,33,0.04)]"><span class="material-symbols-outlined text-primary text-[18px]">payments</span><span class="font-body-sm text-body-sm text-on-surface-variant">Hoy:</span><span class="font-label-md text-label-md text-on-surface">$18,420 MXN</span></div><div class="flex items-center gap-2 px-space-md py-1 bg-surface-container-lowest rounded-full shadow-[0_1px_3px_rgba(33,33,33,0.04)]"><span class="material-symbols-outlined text-secondary text-[18px]">local_shipping</span><span class="font-body-sm text-body-sm text-on-surface-variant">Activos:</span><span class="font-label-md text-label-md text-on-surface">14</span></div><div class="flex items-center gap-2 px-space-md py-1 bg-surface-container-lowest rounded-full shadow-[0_1px_3px_rgba(33,33,33,0.04)]"><span class="material-symbols-outlined text-tertiary-container text-[18px]">timer</span><span class="font-body-sm text-body-sm text-on-surface-variant">Prom:</span><span class="font-label-md text-label-md text-on-surface">22 min</span></div></div><div class="flex items-center gap-space-sm pl-space-md"><button class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded-lg transition-colors" title="Alerta sonora en vivo" type="button"><span class="material-symbols-outlined text-[20px]">volume_up</span></button><div class="relative"><button class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded-lg transition-colors" title="Notificaciones" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></button></div><div class="flex items-center gap-space-sm pl-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container" src="https://lh3.googleusercontent.com/aida/AEtjO1XegK1CiDf_9HLum6p6gxZ25R44MGTZbjY6A5Fd3pLsN72II-ri9EOa6_F0zryMq3Kf4aLjTabrxpVmvQc43yIAPumX3A8H_RHYg91Bpo2A0VM_JngMAFh_BltnrojiRieKLTm7DZu7hG31mn0W1vN1OvNmfzjnRg0jI7cBvC_kkfr0I2PSmK9Y-BU6rQmnNJtwHXhK0uA0YpfPGkNgQR_haGhYu1wKZy1cvFkeskdhrmacyWIpBYWlFtlbRkRgRucKXkH2rrUppQ"><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface">Don Román Bautista</span><span class="font-body-sm text-body-sm text-on-surface-variant">Dueño &amp; Fundador</span></div><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div></div></div></header><main class="relative pt-16 w-full px-gutter-desktop py-space-lg bg-background"><div class="flex flex-col w-full space-y-space-lg">
+<!-- Header Section with Cazo Live Status Banner -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary/10 text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+          3 Cazos de Cobre en Fuego Directo
+        </span>
+<span class="text-outline text-body-sm font-body-sm">• Sucursal Matriz Centro</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface mt-1">Catálogo de Productos y Control de Cazo</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Administra cortes por kilo, gramajes táctiles para la app de clientes, recetas y existencias en cazo caliente.
+      </p>
+</div>
+<!-- Primary Action CTAs -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="h-12 px-space-md bg-surface-container-lowest hover:bg-surface-container text-on-surface rounded-lg font-label-md text-label-md flex items-center gap-2 shadow-sm transition-all transform active:scale-95" id="btnAjustarCazo">
+<span class="material-symbols-outlined text-tertiary-container text-[20px]">soup_kitchen</span>
+<span>Ajustar Cazo en Vivo</span>
+</button>
+<button class="h-12 px-space-md bg-surface-container-lowest hover:bg-surface-container text-primary rounded-lg font-label-md text-label-md flex items-center gap-2 shadow-sm transition-all transform active:scale-95" id="btnMasivoPrecios">
+<span class="material-symbols-outlined text-[20px]">price_change</span>
+<span>Actualización Masiva</span>
+</button>
+<button class="h-12 px-space-lg bg-secondary hover:bg-secondary-container text-on-secondary rounded-lg font-label-lg text-label-lg flex items-center gap-2 shadow-md transition-all transform active:scale-95" id="btnNuevoProducto">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>+ Nuevo Producto / Corte</span>
+</button>
+</div>
+</div>
+<!-- Operational Metrics & Quick Inventory Gauge -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Cazo Activo Total</span>
+<span class="font-headline-lg text-headline-lg text-on-surface mt-0.5">38.5 <span class="text-body-lg font-body-lg text-outline">kg</span></span>
+<span class="font-body-sm text-body-sm text-primary flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[16px]">local_fire_department</span>
+          Estimado: 120 órdenes
+        </span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-[26px]">skillet</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Corte Más Demandado</span>
+<span class="font-headline-lg text-headline-sm text-on-surface mt-0.5 truncate">Surtida Tradicional</span>
+<span class="font-body-sm text-body-sm text-secondary flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+          46% del volumen hoy
+        </span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[26px]">restaurant</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Alertas de Bajo Stock</span>
+<span class="font-headline-lg text-headline-lg text-on-surface mt-0.5">2 <span class="text-body-lg font-body-lg text-secondary">Cortes</span></span>
+<span class="font-body-sm text-body-sm text-outline flex items-center gap-1 mt-1">
+          Costilla (8kg) • Chamorro (2.5kg)
+        </span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[26px]">warning</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Margen Bruto Promedio</span>
+<span class="font-headline-lg text-headline-lg text-on-surface mt-0.5">58.4%</span>
+<span class="font-body-sm text-body-sm text-primary flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[16px]">auto_graph</span>
+          Rentabilidad cazo: Alta
+        </span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">monitoring</span>
+</div>
+</div>
+</div>
+<!-- Category Nav Pills -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1">
+<button class="px-space-md py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center gap-2 shadow-sm whitespace-nowrap">
+<span class="material-symbols-outlined text-[18px]">scale</span>
+<span>Carnitas por Kilo &amp; Gramos</span>
+<span class="ml-1 px-2 py-0.5 bg-on-primary/20 text-on-primary rounded-full text-label-sm font-label-sm">6</span>
+</button>
+<button class="px-space-md py-2.5 rounded-full bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-2 shadow-sm whitespace-nowrap transition-colors">
+<span class="material-symbols-outlined text-outline text-[18px]">lunch_dining</span>
+<span>Tacos y Gorditas</span>
+<span class="ml-1 px-2 py-0.5 bg-surface-container-high text-on-surface-variant rounded-full text-label-sm font-label-sm">9</span>
+</button>
+<button class="px-space-md py-2.5 rounded-full bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-2 shadow-sm whitespace-nowrap transition-colors">
+<span class="material-symbols-outlined text-outline text-[18px]">bakery_dining</span>
+<span>Chicharrón y Botanas</span>
+<span class="ml-1 px-2 py-0.5 bg-surface-container-high text-on-surface-variant rounded-full text-label-sm font-label-sm">4</span>
+</button>
+<button class="px-space-md py-2.5 rounded-full bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-2 shadow-sm whitespace-nowrap transition-colors">
+<span class="material-symbols-outlined text-outline text-[18px]">outdoor_grill</span>
+<span>Complementos y Salsas</span>
+<span class="ml-1 px-2 py-0.5 bg-surface-container-high text-on-surface-variant rounded-full text-label-sm font-label-sm">8</span>
+</button>
+<button class="px-space-md py-2.5 rounded-full bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-2 shadow-sm whitespace-nowrap transition-colors">
+<span class="material-symbols-outlined text-outline text-[18px]">local_drink</span>
+<span>Bebidas de Vidrio</span>
+<span class="ml-1 px-2 py-0.5 bg-surface-container-high text-on-surface-variant rounded-full text-label-sm font-label-sm">5</span>
+</button>
+</div>
+<!-- Search & Live Filters Toolbar -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm w-full md:w-auto flex-1 max-w-lg">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">manage_search</span>
+<input class="w-full h-11 pl-10 pr-4 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20" id="searchInput" placeholder="Buscar por corte, gramaje, código (ej. 'Maciza', '001')..." type="text">
+</div>
+</div>
+<!-- Filter Pills -->
+<div class="flex items-center gap-2 w-full md:w-auto overflow-x-auto justify-start md:justify-end">
+<span class="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider hidden lg:inline-block mr-1">Filtrar:</span>
+<button class="filter-chip px-3 py-1.5 rounded-lg bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm active">Todos (16)</button>
+<button class="filter-chip px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm">En Cazo Caliente (12)</button>
+<button class="filter-chip px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Stock Crítico (2)</button>
+<button class="filter-chip px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Agotados (2)</button>
+</div>
+</div>
+<!-- Main Split Layout: CRUD Products Table + Quick Recipe Drawer Preview -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- High-Fidelity Products Table (8 or 12 Cols depending on drawer) -->
+<div class="xl:col-span-8 flex flex-col bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all duration-300" id="tableContainer">
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Lista Maestra de Carnitas y Alimentos</span>
+<span class="px-2 py-0.5 bg-surface-container-high rounded text-on-surface font-label-sm text-label-sm">Modo Báscula Activa</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Actualización en tiempo real vía MQTT</span>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low/50 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-space-md">Corte / Ítem</th>
+<th class="py-3 px-space-md">Pesaje</th>
+<th class="py-3 px-space-md">Costo Prep.</th>
+<th class="py-3 px-space-md">Precio Público</th>
+<th class="py-3 px-space-md">Disponibilidad en Cazo</th>
+<th class="py-3 px-space-md">App Clientes</th>
+<th class="py-3 px-space-md text-right">Acciones</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low">
+<!-- Item 1: Surtida Tradicional -->
+<tr class="product-row hover:bg-surface-container-low/40 transition-colors cursor-pointer" onclick="openDrawer('surtida')">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Traditional Mexican carnitas surtida in a copper pot, juicy tender pork confit with crispy edges, studio culinary photography on warm rustic background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4dD0G7MD8cNeBbq-eyvbGlfVz-1RCtUC2Ijh58HcObSJGbJQhBN_hbSw0JAEyWUuLYd-Gls9-JRmkIgclItVquetz8p3THL_Fot6wzMVqVfTHFo5nXiWL0AXY1H1OLRSWXLiPaTuf72M-0P1pMLZDCh6uk0vdbZTlo2bia35BbRWNpEHCA2vBmqn7mwacR_JZd1tmPOs_W95FDGLwGNTb-Sw_mMDFY9nfYgDIysM">
+<span class="absolute bottom-0 left-0 right-0 bg-secondary text-on-secondary font-label-sm text-[9px] text-center uppercase tracking-tighter py-0.5">Top 1</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Carnitas Surtida Tradicional</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Cochito tierno con toque de cuerito y maciza</span>
+<span class="font-label-sm text-label-sm text-primary mt-0.5">SKU: CAR-001</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex px-2 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">
+                  Por Kilo (Fraccionable)
+                </span>
+</td>
+<td class="py-space-md px-space-md font-body-md text-body-md text-outline">
+                $138.50 / kg
+              </td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-headline-sm text-label-lg text-on-surface">$340.00 MXN</span>
+<span class="font-body-sm text-body-sm text-tertiary-container">1/4 kg: $85.00</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md text-on-surface">18.5 kg en Cazo</span>
+</div>
+<div class="w-28 bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 78%"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<label class="relative inline-flex items-center cursor-pointer" onclick="event.stopPropagation()">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-10 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</td>
+<td class="py-space-md px-space-md text-right" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1">
+<button class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container rounded-lg transition-colors" onclick="openDrawer('surtida')" title="Editar Corte">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container rounded-lg transition-colors" title="Historial de Precios">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 2: Maciza Especial -->
+<tr class="product-row hover:bg-surface-container-low/40 transition-colors cursor-pointer" onclick="openDrawer('maciza')">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Tender lean Mexican maciza carnitas pulled and sliced on a wooden butcher block with lime and fresh cilantro" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGr8CSz4gwuNg7J643PCEO5BfZmmCdf9wUmfWVk8zYWA1u7dr8Dr2zq4srqedSuZxsWIxhgRvBGEugPPosFqTW4krdadvu1gm7N7v3imJSRcMatCeJsy0KDELgy-IBVlR336eu3pWLw6UO69iQjOW3jLTZ74AF-dskFchfSoMxY-L2F0BOxLRudGPswhgaInBPvLcv-cqR_GfKI7SPNkkXgfEliE1USwy5kBCpw1I">
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Maciza Especial 100% Magra</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Pierna y lomo cocidos en manteca artesanal</span>
+<span class="font-label-sm text-label-sm text-primary mt-0.5">SKU: CAR-002</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex px-2 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">
+                  Por Kilo (Fraccionable)
+                </span>
+</td>
+<td class="py-space-md px-space-md font-body-md text-body-md text-outline">
+                $162.00 / kg
+              </td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-headline-sm text-label-lg text-on-surface">$380.00 MXN</span>
+<span class="font-body-sm text-body-sm text-tertiary-container">1/4 kg: $95.00</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md text-on-surface">12.0 kg en Cazo</span>
+</div>
+<div class="w-28 bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 55%"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<label class="relative inline-flex items-center cursor-pointer" onclick="event.stopPropagation()">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-10 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</td>
+<td class="py-space-md px-space-md text-right" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1">
+<button class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container rounded-lg transition-colors" onclick="openDrawer('maciza')" title="Editar Corte">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container rounded-lg transition-colors" title="Historial de Precios">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 3: Costilla Dorada Crujiente (Bajo Stock) -->
+<tr class="product-row hover:bg-surface-container-low/40 transition-colors cursor-pointer bg-error-container/10" onclick="openDrawer('costilla')">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Crispy golden Mexican carnitas spare ribs costilla golden caramelized pork bones served with spicy roasted green salsa" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRZV5pQcnhoZ_JoBbz_c3A31Z1eIPUZu_I7yAoq0s9fFpQROuM2CncNZBFakPKheuRPEH7JZ4vZXK3AqsJmrUsVetx1QtlSqVGM9nepv-ICUA-8jRCrqMr3BnEHJyv2QziBBA56AKpjfvXnHkAaMWganREmGPN9D0smaJtOvVXkuisy-GS-oaBLPpYWxjXox-luAgpR7BiBqk5LznuK4z11qIQv6xFPE25s8JglP0">
+<span class="absolute top-0 right-0 bg-secondary text-on-secondary font-label-sm text-[8px] px-1 rounded-bl">CRÍTICO</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Costilla Dorada Crujiente</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Costillares con carne suave y corteza crujiente</span>
+<span class="font-label-sm text-label-sm text-secondary mt-0.5">Solo 8.0 kg en cazo</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex px-2 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">
+                  Por Kilo (Fraccionable)
+                </span>
+</td>
+<td class="py-space-md px-space-md font-body-md text-body-md text-outline">
+                $155.00 / kg
+              </td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-headline-sm text-label-lg text-on-surface">$360.00 MXN</span>
+<span class="font-body-sm text-body-sm text-tertiary-container">1/4 kg: $90.00</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-md text-label-md text-secondary">8.0 kg (Poco Stock)</span>
+</div>
+<div class="w-28 bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 25%"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<label class="relative inline-flex items-center cursor-pointer" onclick="event.stopPropagation()">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-10 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</td>
+<td class="py-space-md px-space-md text-right" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1">
+<button class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container rounded-lg transition-colors" onclick="openDrawer('costilla')" title="Editar Corte">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container rounded-lg transition-colors" title="Duplicar Producto">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 4: Chicharrón de Cazo Artesanal -->
+<tr class="product-row hover:bg-surface-container-low/40 transition-colors cursor-pointer" onclick="openDrawer('chicharron')">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Golden crispy Mexican pork rinds chicharron de cazo pieces stacked high with lime slices and roasted chile arbol salsa" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-9HPakM2Kg41Md2wAAW-NAe-CgxakiOvZdd1rcpUqtbTfBygUuFiCAZtvkupS8znvhi98seuARP6ZaHFGyq3tRFXugeBxZACi7dPbOOvC_c2etWEOMgAeFHThThoJh3-x2OzCGDKh3WR0VyL5I7eoC_eYbZfX5IF85n6S01QndE18ihsxo97xoGrrYuh3XsTgnKByOLU1LaQrLN50tdPZ5Tq1xR4appl3fLa0osQ">
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Chicharrón de Cazo Artesanal</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Cáscara crujiente con hebra de carne frita</span>
+<span class="font-label-sm text-label-sm text-primary mt-0.5">SKU: BOT-004</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex px-2 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">
+                  Por Kilo / Porción
+                </span>
+</td>
+<td class="py-space-md px-space-md font-body-md text-body-md text-outline">
+                $110.00 / kg
+              </td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-headline-sm text-label-lg text-on-surface">$320.00 MXN</span>
+<span class="font-body-sm text-body-sm text-tertiary-container">1/4 kg: $80.00</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md text-on-surface">Disponible (24 planchas)</span>
+</div>
+<div class="w-28 bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 85%"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<label class="relative inline-flex items-center cursor-pointer" onclick="event.stopPropagation()">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-10 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</td>
+<td class="py-space-md px-space-md text-right" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1">
+<button class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container rounded-lg transition-colors" onclick="openDrawer('chicharron')" title="Editar Corte">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container rounded-lg transition-colors" title="Historial de Precios">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 5: Orden de Tacos Surtidos x3 -->
+<tr class="product-row hover:bg-surface-container-low/40 transition-colors cursor-pointer" onclick="openDrawer('tacos')">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Three generous Mexican carnitas street tacos with double handmade corn tortilla, chopped onions, fresh cilantro and spicy red salsa on Mexican ceramic platter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNMY2hThxxegZmYl6wjTUrKu5lyei7av3DE3unyRs8YQQh8cGaDa_Jth-bMEB0zW9mKXgq-98FuYKq66BUPJX6i9wDiZZmqAb4V5365HMYxfXUMQrQyXIMbJzyveBDeTjYDzHDZ7bKCp3sL7qlMh2fAxc9fraSY6hwyVjed3Lmuhr6R4x0wz8qV4NsL0AB1A8AIlxKa-63EIQRXuG2CVxYDjenYjphO4woIcpC7GI">
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Orden de Tacos Surtidos (3 pzas)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Doble tortilla taquera con cebolla y cilantro</span>
+<span class="font-label-sm text-label-sm text-primary mt-0.5">SKU: TAC-010</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex px-2 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">
+                  Por Orden (3 tacos)
+                </span>
+</td>
+<td class="py-space-md px-space-md font-body-md text-body-md text-outline">
+                $36.00 / orden
+              </td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-headline-sm text-label-lg text-on-surface">$95.00 MXN</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">$31.66 / taco</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md text-on-surface">Tortillas: 15 kg</span>
+</div>
+<div class="w-28 bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 70%"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<label class="relative inline-flex items-center cursor-pointer" onclick="event.stopPropagation()">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-10 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</td>
+<td class="py-space-md px-space-md text-right" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1">
+<button class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container rounded-lg transition-colors" onclick="openDrawer('tacos')" title="Editar Corte">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container rounded-lg transition-colors" title="Historial de Precios">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 6: Refresco de Vidrio 500ml -->
+<tr class="product-row hover:bg-surface-container-low/40 transition-colors cursor-pointer" onclick="openDrawer('refresco')">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Chilled glass bottle soda with condensation drips and metallic crown cap standing on a clean kitchen counter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpx6kRzjGRvSm_q4TXfguAvXT6t1PzWtpcH3yxgIUQTs7Z1mUeLHfJWvoeEGADYbTEa9_ej-ICLv9cOFrPwBEziskFBhq82H67QfFa37T5pRjV8NwKdIlCr-UNnXP6cxMHfmZ35hOIuUFc4m4XbTSLAF6TpmoVk3R80pIaji-P1WWo2gGb599-ZHzJ8Qeye9oyQJYNeR8vVBgYOxuH7CjRMxQucx4W0q7WBVpdd4U">
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Refresco de Vidrio Retornable 500ml</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Coca-Cola, Sidral Mundet o Jarritos</span>
+<span class="font-label-sm text-label-sm text-primary mt-0.5">SKU: BEB-050</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex px-2 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">
+                  Por Pieza (Botella)
+                </span>
+</td>
+<td class="py-space-md px-space-md font-body-md text-body-md text-outline">
+                $16.50 / pza
+              </td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-headline-sm text-label-lg text-on-surface">$30.00 MXN</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Margen: 45%</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md text-on-surface">48 pzas en frío</span>
+</div>
+<div class="w-28 bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 90%"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<label class="relative inline-flex items-center cursor-pointer" onclick="event.stopPropagation()">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-10 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</td>
+<td class="py-space-md px-space-md text-right" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1">
+<button class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container rounded-lg transition-colors" onclick="openDrawer('refresco')" title="Editar Corte">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container rounded-lg transition-colors" title="Historial de Precios">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination -->
+<div class="px-space-md py-3 bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<span>Mostrando 6 de 24 productos registrados</span>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-sm text-label-sm">Anterior</button>
+<span class="px-3 py-1 bg-primary text-on-primary rounded font-label-sm text-label-sm">1</span>
+<button class="px-3 py-1.5 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-sm text-label-sm">2</button>
+<button class="px-3 py-1.5 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-sm text-label-sm">Siguiente</button>
+</div>
+</div>
+</div>
+<!-- Persistent / Contextual Side Editor Drawer (4 Cols) -->
+<div class="xl:col-span-4 bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col space-y-space-md sticky top-20" id="drawerEditor">
+<!-- Drawer Header with Mascot Piggy delivery avatar -->
+<div class="flex items-start justify-between pb-space-sm border-b border-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-headline-sm text-[20px]">
+<span class="material-symbols-outlined">tune</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface block">Edición de Corte en Vivo</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sincronización instantánea con App</span>
+</div>
+</div>
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface rounded-lg hover:bg-surface-container" onclick="resetDrawer()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Current Selected Item Info Card -->
+<div class="flex items-center gap-space-sm p-3 bg-surface-container-low rounded-lg">
+<div class="w-12 h-12 rounded-lg overflow-hidden bg-surface-container flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Traditional Mexican carnitas surtida in a copper pot, juicy tender pork confit with crispy edges, studio culinary photography on warm rustic background" id="drawerImage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDH_CrOYELJFKGtK10aDQfLtdSB6MpT09u31jVxnxbJFxc3TyvB7PBgVDoVLIf9RUMTn6AO0BuorYubM061me1LRaQv7iXFRB5wwSyqUj-vGboqjBctjZY9bjIb6OyNzq1mu18y1C1pa-xi6nPhv4NscnN_K1NIqqLQ9SA8z1hLgBr--8Cxuczubamb9MOWh9LPTLEbUFJIKKceG4o4SnukwJ1j27R1J_rp97rpjDY">
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate" id="drawerTitle">Carnitas Surtida Tradicional</span>
+<span class="font-label-sm text-label-sm text-primary uppercase" id="drawerSku">Corte Activo • Matriz</span>
+</div>
+</div>
+<!-- Form Inputs -->
+<div class="space-y-space-md">
+<!-- Name -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">Nombre del Producto / Corte</label>
+<input class="h-11 px-3 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20" id="inputName" type="text" value="Carnitas Surtida Tradicional">
+</div>
+<!-- Description -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">Descripción para App BautistaGo</label>
+<textarea class="p-3 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20 resize-none" id="inputDesc" rows="2">Cochito tierno con la combinación exacta de maciza jugosa, cuerito crujiente y costilla dorada en cazo tradicional.</textarea>
+</div>
+<!-- Price Configuration & Gram Breakdown -->
+<div class="flex flex-col gap-2 p-3 bg-surface-container-low rounded-xl">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">Precio Base por Kilo</label>
+<span class="font-label-sm text-label-sm text-secondary font-bold">MXN</span>
+</div>
+<div class="relative">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 font-headline-sm text-headline-sm text-outline">$</span>
+<input class="w-full h-12 pl-8 pr-4 bg-surface-container-lowest font-headline-md text-headline-md text-on-surface rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 font-bold" id="inputPriceKg" oninput="calculateGrams(this.value)" type="number" value="340">
+</div>
+<!-- Dynamic Gram Breakdowns Pills for PWA Delivery -->
+<div class="pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant block mb-1.5">Desglose Automático para Clientes (PWA):</span>
+<div class="grid grid-cols-3 gap-2">
+<div class="bg-surface-container-lowest p-2 rounded-lg text-center shadow-xs">
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase block">1/4 Kilo</span>
+<span class="font-headline-sm text-label-lg text-primary font-bold" id="price250">$85.00</span>
+</div>
+<div class="bg-surface-container-lowest p-2 rounded-lg text-center shadow-xs">
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase block">1/2 Kilo</span>
+<span class="font-headline-sm text-label-lg text-primary font-bold" id="price500">$170.00</span>
+</div>
+<div class="bg-surface-container-lowest p-2 rounded-lg text-center shadow-xs">
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase block">3/4 Kilo</span>
+<span class="font-headline-sm text-label-lg text-primary font-bold" id="price750">$255.00</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Order Options Allowed for this Cut -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">Opciones de Preparación al Cliente</span>
+<label class="flex items-center gap-space-sm p-2 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<input checked="" class="w-5 h-5 accent-secondary rounded" type="checkbox">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Permitir término jugoso / dorado</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">El cliente elige el doradito en el cazo</span>
+</div>
+</label>
+<label class="flex items-center gap-space-sm p-2 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<input checked="" class="w-5 h-5 accent-secondary rounded" type="checkbox">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Permitir selección con cuerito extra</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Suma cuerito sin recargo</span>
+</div>
+</label>
+<label class="flex items-center gap-space-sm p-2 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<input checked="" class="w-5 h-5 accent-secondary rounded" type="checkbox">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Incluir guarnición gratis (Salsas, Cebolla, Limón)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Por defecto en pedidos &gt; 500g</span>
+</div>
+</label>
+</div>
+<!-- Quick Weight in Pot Modifier -->
+<div class="flex items-center justify-between p-3 bg-surface-container-low rounded-xl">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">Existencia en Cazo</span>
+<span class="font-headline-sm text-label-lg text-on-surface"><span id="cazoStockVal">18.5</span> kg listos</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-9 h-9 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-headline-sm text-headline-sm flex items-center justify-center shadow-xs active:scale-95 transition-transform" onclick="adjustCazoStock(-1)">-</button>
+<button class="w-9 h-9 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-headline-sm text-headline-sm flex items-center justify-center shadow-xs active:scale-95 transition-transform" onclick="adjustCazoStock(1)">+</button>
+</div>
+</div>
+</div>
+<!-- Action Buttons in Drawer -->
+<div class="pt-space-md flex flex-col gap-2">
+<button class="h-12 w-full bg-secondary hover:bg-secondary-container text-on-secondary rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md transition-all transform active:scale-95" id="btnSaveDrawer" onclick="saveChanges()">
+<span class="material-symbols-outlined text-[20px]">save</span>
+<span>Guardar Cambios de Catálogo</span>
+</button>
+<button class="h-11 w-full bg-surface-container hover:bg-error-container hover:text-on-error-container text-on-surface-variant rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 transition-colors" id="btnAgotadoHoy" onclick="toggleSoldOutToday()">
+<span class="material-symbols-outlined text-[18px]">block</span>
+<span>Marcar Agotado en Cazo por Hoy</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-3 px-4 py-3 bg-inverse-surface text-inverse-on-surface rounded-xl shadow-xl" id="toast">
+<span class="material-symbols-outlined text-primary text-[22px]">check_circle</span>
+<span class="font-body-md text-body-md" id="toastMessage">Cambios guardados con éxito en la red de reparto.</span>
+</div>
+</div>
+<!-- Interactive Client-side Script -->
+<script>
+  // Product Catalog Dataset for Drawer preview
+  const catalogData = {
+    surtida: {
+      name: "Carnitas Surtida Tradicional",
+      sku: "CAR-001",
+      desc: "Cochito tierno con la combinación exacta de maciza jugosa, cuerito crujiente y costilla dorada en cazo tradicional.",
+      price: 340,
+      stock: 18.5
+    },
+    maciza: {
+      name: "Maciza Especial 100% Magra",
+      sku: "CAR-002",
+      desc: "Pierna y lomo cocidos a fuego lento en manteca pura sin grasa adicional. Ideal para amantes de la carne magra.",
+      price: 380,
+      stock: 12.0
+    },
+    costilla: {
+      name: "Costilla Dorada Crujiente",
+      sku: "CAR-003",
+      desc: "Costillares seleccionados con carne suave pegada al hueso y orilla tostada de sabor intenso.",
+      price: 360,
+      stock: 8.0
+    },
+    chicharron: {
+      name: "Chicharrón de Cazo Artesanal",
+      sku: "BOT-004",
+      desc: "Cáscara fresca y crujiente recién frita en cazo con tiras de carne botanera.",
+      price: 320,
+      stock: 24.0
+    },
+    tacos: {
+      name: "Orden de Tacos Surtidos (3 pzas)",
+      sku: "TAC-010",
+      desc: "Tres tacos generosos con tortilla taquera doble, jardín de cebolla y cilantro recién picado.",
+      price: 95,
+      stock: 50.0
+    },
+    refresco: {
+      name: "Refresco de Vidrio 500ml",
+      sku: "BEB-050",
+      desc: "Bien frío para acompañar tus carnitas. Variedades mexicanas clásicas.",
+      price: 30,
+      stock: 48.0
+    }
+  };
+
+  let currentKey = "surtida";
+
+  function openDrawer(key) {
+    if (!catalogData[key]) return;
+    currentKey = key;
+    const item = catalogData[key];
+
+    document.getElementById("inputName").value = item.name;
+    document.getElementById("drawerTitle").innerText = item.name;
+    document.getElementById("drawerSku").innerText = `Corte SKU: ${item.sku}`;
+    document.getElementById("inputDesc").value = item.desc;
+    document.getElementById("inputPriceKg").value = item.price;
+    document.getElementById("cazoStockVal").innerText = item.stock.toFixed(1);
+    calculateGrams(item.price);
+
+    // Visual feedback highlight
+    const drawer = document.getElementById("drawerEditor");
+    drawer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    drawer.classList.add("ring-2", "ring-primary");
+    setTimeout(() => drawer.classList.remove("ring-2", "ring-primary"), 600);
+  }
+
+  function calculateGrams(basePrice) {
+    const val = parseFloat(basePrice) || 0;
+    document.getElementById("price250").innerText = `$${(val * 0.25).toFixed(2)}`;
+    document.getElementById("price500").innerText = `$${(val * 0.50).toFixed(2)}`;
+    document.getElementById("price750").innerText = `$${(val * 0.75).toFixed(2)}`;
+  }
+
+  function adjustCazoStock(delta) {
+    const stockEl = document.getElementById("cazoStockVal");
+    let current = parseFloat(stockEl.innerText) || 0;
+    current = Math.max(0, current + delta);
+    stockEl.innerText = current.toFixed(1);
+    if (catalogData[currentKey]) {
+      catalogData[currentKey].stock = current;
+    }
+  }
+
+  function saveChanges() {
+    const newName = document.getElementById("inputName").value;
+    const newPrice = document.getElementById("inputPriceKg").value;
+    showToast(`Guardado: ${newName} actualizado a $${newPrice} MXN`);
+  }
+
+  function toggleSoldOutToday() {
+    const btn = document.getElementById("btnAgotadoHoy");
+    const stockEl = document.getElementById("cazoStockVal");
+    stockEl.innerText = "0.0";
+    showToast(`${catalogData[currentKey].name} marcado como AGOTADO en cazo por hoy.`);
+  }
+
+  function resetDrawer() {
+    openDrawer("surtida");
+  }
+
+  function showToast(message) {
+    const toast = document.getElementById("toast");
+    const toastMsg = document.getElementById("toastMessage");
+    toastMsg.innerText = message;
+    toast.classList.remove("translate-y-24", "opacity-0", "pointer-events-none");
+    toast.classList.add("translate-y-0", "opacity-100");
+
+    setTimeout(() => {
+      toast.classList.add("translate-y-24", "opacity-0", "pointer-events-none");
+      toast.classList.remove("translate-y-0", "opacity-100");
+    }, 3200);
+  }
+
+  // Quick live filter highlight
+  document.querySelectorAll('.filter-chip').forEach(chip => {
+    chip.addEventListener('click', function() {
+      document.querySelectorAll('.filter-chip').forEach(c => {
+        c.classList.remove('bg-primary-fixed', 'text-on-primary-fixed-variant');
+        c.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      });
+      this.classList.add('bg-primary-fixed', 'text-on-primary-fixed-variant');
+      this.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+      showToast(`Filtro aplicado: ${this.innerText.trim()}`);
+    });
+  });
+
+  // Action buttons micro-interactions
+  document.getElementById("btnNuevoProducto").addEventListener('click', () => {
+    document.getElementById("inputName").value = "Nuevo Corte Especial";
+    document.getElementById("drawerTitle").innerText = "Nuevo Corte Especial";
+    document.getElementById("drawerSku").innerText = "SKU: CAR-NEW";
+    document.getElementById("inputPriceKg").value = "350";
+    calculateGrams(350);
+    showToast("Formulario listo para nuevo producto / corte.");
+  });
+
+  document.getElementById("btnMasivoPrecios").addEventListener('click', () => {
+    showToast("Abriendo asistente de margen y ajuste inflacionario general.");
+  });
+
+  document.getElementById("btnAjustarCazo").addEventListener('click', () => {
+    showToast("Lectura de báscula en línea sincronizada: 38.5 kg totales.");
+  });
+
+  // Real-time table search input
+  document.getElementById("searchInput").addEventListener('input', function(e) {
+    const term = e.target.value.toLowerCase();
+    const rows = document.querySelectorAll('.product-row');
+    rows.forEach(row => {
+      const text = row.innerText.toLowerCase();
+      row.style.display = text.includes(term) ? '' : 'none';
+    });
+  });
+</script></main></div></body></html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-container": "#fffdff", "error": "#ba1a1a", "on-secondary-fixed-variant": "#93000d", "tertiary-fixed": "#ffdf9e", "on-tertiary-fixed": "#261a00", "surface-container": "#f0eded", "on-secondary-container": "#fffbff", "primary-fixed": "#d4e3ff", "on-error": "#ffffff", "on-error-container": "#93000a", "outline": "#717783", "inverse-surface": "#303030", "on-surface-variant": "#414752", "surface": "#fcf9f8", "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "on-surface": "#1b1c1c", "background": "#fcf9f8", "tertiary": "#765800", "secondary-container": "#db322f", "on-primary-fixed-variant": "#004786", "error-container": "#ffdad6", "outline-variant": "#c1c6d4", "secondary": "#b7131a", "surface-container-low": "#f6f3f2", "surface-container-highest": "#e5e2e1", "tertiary-container": "#956f00", "primary-container": "#1976d2", "surface-bright": "#fcf9f8", "on-tertiary-fixed-variant": "#5b4300", "surface-container-high": "#eae7e7", "on-secondary-fixed": "#410002", "on-tertiary-container": "#fffdff", "on-background": "#1b1c1c", "surface-dim": "#dcd9d9", "secondary-fixed": "#ffdad6", "primary": "#005dac", "inverse-primary": "#a5c8ff", "secondary-fixed-dim": "#ffb4ac", "inverse-on-surface": "#f3f0ef", "primary-fixed-dim": "#a5c8ff", "on-primary-fixed": "#001c3a", "surface-variant": "#e5e2e1", "tertiary-fixed-dim": "#fabd00", "surface-tint": "#005faf" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-desktop": "1.5rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter": "1rem", "margin": "1rem", "margin-desktop": "2rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-xl": "2rem" }, "fontFamily": { "body-sm": [ "Work Sans" ], "display-lg": [ "Montserrat" ], "body-lg": [ "Work Sans" ], "headline-sm": [ "Montserrat" ], "headline-lg": [ "Montserrat" ], "display-lg-mobile": [ "Montserrat" ], "label-lg": [ "Montserrat" ], "body-md": [ "Work Sans" ], "label-sm": [ "Montserrat" ], "label-md": [ "Montserrat" ], "headline-md": [ "Montserrat" ] }, "fontSize": { "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "display-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "500" } ], "headline-sm": [ "18px", { "lineHeight": "24px", "fontWeight": "600" } ], "headline-lg": [ "26px", { "lineHeight": "32px", "fontWeight": "700" } ], "display-lg-mobile": [ "30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "800" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "headline-md": [ "22px", { "lineHeight": "28px", "fontWeight": "700" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col flex-1 min-h-0"><div class="px-space-lg pt-space-lg pb-space-md flex items-center gap-space-md"><div class="relative flex-shrink-0"><img alt="Profile" class="w-10 h-10 rounded-full object-cover shadow-[0_2px_8px_-2px_rgba(33,33,33,0.12)]" src="https://lh3.googleusercontent.com/aida/AEtjO1XegK1CiDf_9HLum6p6gxZ25R44MGTZbjY6A5Fd3pLsN72II-ri9EOa6_F0zryMq3Kf4aLjTabrxpVmvQc43yIAPumX3A8H_RHYg91Bpo2A0VM_JngMAFh_BltnrojiRieKLTm7DZu7hG31mn0W1vN1OvNmfzjnRg0jI7cBvC_kkfr0I2PSmK9Y-BU6rQmnNJtwHXhK0uA0YpfPGkNgQR_haGhYu1wKZy1cvFkeskdhrmacyWIpBYWlFtlbRkRgRucKXkH2rrUppQ"><span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-primary rounded-full ring-2 ring-surface-container-low"></span></div><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-surface truncate">BautistaGo</span><div class="flex items-center gap-space-xs mt-0.5"><span class="inline-block px-space-xs py-0.5 bg-secondary text-on-secondary rounded font-label-sm text-label-sm uppercase tracking-wide">Propietario / Master</span></div></div></div><div class="px-space-md py-space-xs"><div class="px-space-sm py-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Operación y Gestión</div></div><nav class="flex-1 px-space-md space-y-space-xs overflow-y-auto" data-active-classes="bg-primary-container text-on-primary-container font-label-lg rounded-lg shadow-[0_2px_8px_-2px_rgba(25,118,210,0.25)]"><a class="flex items-center gap-space-md px-space-md py-space-md rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-lg text-label-lg transition-all" data-path="dashboard-analitico" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span>Dashboard Analítico</span></a><a class="flex items-center justify-between px-space-md py-space-md rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-lg text-label-lg transition-all" data-path="pedidos-en-vivo" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Pedidos en Vivo</span></div><span class="px-space-xs py-0.5 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded-full animate-pulse">14</span></a><a class="flex items-center gap-space-md px-space-md py-space-md rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-lg text-label-lg transition-all" data-path="catalogo-y-precios" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Catálogo y Precios</span></a><a class="flex items-center gap-space-md px-space-md py-space-md rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-lg text-label-lg transition-all" data-path="personal-y-reparto" href="#"><span class="material-symbols-outlined text-[20px]">two_wheeler</span><span>Personal y Reparto</span></a><a class="flex items-center gap-space-md px-space-md py-space-md rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-lg text-label-lg transition-all" data-path="reportes-y-cortes-de-caja" href="#"><span class="material-symbols-outlined text-[20px]">point_of_sale</span><span>Reportes y Cortes</span></a></nav></div><div class="p-space-md bg-surface-container m-space-md rounded-xl"><div class="flex items-center justify-between mb-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Sucursal Activa</span><span class="w-2 h-2 rounded-full bg-primary"></span></div><div class="font-headline-sm text-label-lg text-on-surface truncate">Matriz Centro</div><div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5 mt-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span>En servicio • 3 cazos activos</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full h-10 pl-10 pr-4 bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Buscar folio, cliente, producto, empleado..." type="text"></div></div><div class="flex items-center gap-space-lg"><div class="hidden xl:flex items-center gap-space-sm"><div class="flex items-center gap-2 px-space-md py-1 bg-surface-container-lowest rounded-full shadow-[0_1px_3px_rgba(33,33,33,0.04)]"><span class="material-symbols-outlined text-primary text-[18px]">payments</span><span class="font-body-sm text-body-sm text-on-surface-variant">Hoy:</span><span class="font-label-md text-label-md text-on-surface">$18,420 MXN</span></div><div class="flex items-center gap-2 px-space-md py-1 bg-surface-container-lowest rounded-full shadow-[0_1px_3px_rgba(33,33,33,0.04)]"><span class="material-symbols-outlined text-secondary text-[18px]">local_shipping</span><span class="font-body-sm text-body-sm text-on-surface-variant">Activos:</span><span class="font-label-md text-label-md text-on-surface">14</span></div><div class="flex items-center gap-2 px-space-md py-1 bg-surface-container-lowest rounded-full shadow-[0_1px_3px_rgba(33,33,33,0.04)]"><span class="material-symbols-outlined text-tertiary-container text-[18px]">timer</span><span class="font-body-sm text-body-sm text-on-surface-variant">Prom:</span><span class="font-label-md text-label-md text-on-surface">22 min</span></div></div><div class="flex items-center gap-space-sm pl-space-md"><button class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded-lg transition-colors" title="Alerta sonora en vivo" type="button"><span class="material-symbols-outlined text-[20px]">volume_up</span></button><div class="relative"><button class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded-lg transition-colors" title="Notificaciones" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></button></div><div class="flex items-center gap-space-sm pl-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container" src="https://lh3.googleusercontent.com/aida/AEtjO1XegK1CiDf_9HLum6p6gxZ25R44MGTZbjY6A5Fd3pLsN72II-ri9EOa6_F0zryMq3Kf4aLjTabrxpVmvQc43yIAPumX3A8H_RHYg91Bpo2A0VM_JngMAFh_BltnrojiRieKLTm7DZu7hG31mn0W1vN1OvNmfzjnRg0jI7cBvC_kkfr0I2PSmK9Y-BU6rQmnNJtwHXhK0uA0YpfPGkNgQR_haGhYu1wKZy1cvFkeskdhrmacyWIpBYWlFtlbRkRgRucKXkH2rrUppQ"><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface">Don Román Bautista</span><span class="font-body-sm text-body-sm text-on-surface-variant">Dueño &amp; Fundador</span></div><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div></div></div></header><main class="relative pt-16 w-full px-gutter-desktop py-space-lg bg-background"><div class="flex flex-col w-full space-y-space-lg">
+<!-- PAGE CONTROL HEADER -->
+<section class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider mb-1">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary-container animate-ping"></span>
+<span>Panel de Control Gerencial • Matriz Centro</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Bienvenido, Don Román Bautista</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Resumen operativo y comercial de cazos, comandas y logística de reparto en tiempo real.</p>
+</div>
+<!-- Date selector & Action buttons -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="inline-flex p-1 bg-surface-container rounded-lg">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-lowest font-label-md text-label-md text-on-surface shadow-sm transition-all" type="button">Hoy, 24 Oct</button>
+<button class="px-space-md py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" type="button">Últimos 7 días</button>
+<button class="px-space-md py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" type="button">Este mes</button>
+<button class="px-space-sm py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] align-middle">calendar_month</span>
+</button>
+</div>
+<button class="inline-flex items-center gap-space-xs px-space-md py-2.5 bg-primary-container text-on-primary-container font-label-md text-label-md rounded-lg shadow-sm hover:opacity-95 active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Descargar Reporte Ejecutivo (PDF/Excel)</span>
+</button>
+</div>
+</section>
+<!-- 5 KPI CARDS ROW -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-space-md">
+<!-- KPI 1: Ventas Totales -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Ventas Totales del Día</span>
+<span class="p-1.5 rounded-lg bg-primary-fixed text-on-primary-fixed-variant material-symbols-outlined text-[18px]">payments</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">$18,420 <span class="font-label-sm text-label-sm text-on-surface-variant">MXN</span></div>
+<div class="flex items-center justify-between mt-2">
+<span class="inline-flex items-center gap-0.5 text-primary text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+            +14.2% vs ayer
+          </span>
+<!-- Inline Sparkline -->
+<svg class="w-16 h-6 overflow-visible text-primary" fill="none" viewBox="0 0 64 24">
+<path d="M1 20 L 12 18 L 24 14 L 36 17 L 48 6 L 63 2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<path d="M1 20 L 12 18 L 24 14 L 36 17 L 48 6 L 63 2 V 24 H 1 Z" fill="currentColor" fill-opacity="0.12"></path>
+</svg>
+</div>
+</div>
+</div>
+<!-- KPI 2: Comandas Despachadas -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Comandas Totales</span>
+<span class="p-1.5 rounded-lg bg-secondary-fixed text-on-secondary-fixed-variant material-symbols-outlined text-[18px]">receipt_long</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">74 <span class="font-label-sm text-label-sm text-on-surface-variant">pedidos</span></div>
+<div class="flex items-center justify-between mt-2 font-body-sm text-body-sm">
+<span class="text-on-surface font-label-md">98% a tiempo</span>
+<span class="px-space-xs py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm">2 demorados</span>
+</div>
+</div>
+</div>
+<!-- KPI 3: Ticket Promedio -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Ticket Promedio</span>
+<span class="p-1.5 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed-variant material-symbols-outlined text-[18px]">shopping_bag</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">$248.90 <span class="font-label-sm text-label-sm text-on-surface-variant">MXN</span></div>
+<div class="flex items-center gap-1 mt-2 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+<span>+8% por combos familiares</span>
+</div>
+</div>
+</div>
+<!-- KPI 4: Tiempo Promedio -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Promedio de Entrega</span>
+<span class="p-1.5 rounded-lg bg-primary-fixed text-on-primary-fixed-variant material-symbols-outlined text-[18px]">speed</span>
+</div>
+<div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">21.4</span>
+<span class="font-body-md text-body-md text-on-surface-variant">minutos</span>
+</div>
+<div class="flex items-center justify-between mt-2">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Meta: &lt;28 min</span>
+<span class="px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm">Óptimo</span>
+</div>
+</div>
+</div>
+<!-- KPI 5: Efectivo en Ruta -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Efectivo en Ruta</span>
+<span class="p-1.5 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed-variant material-symbols-outlined text-[18px]">two_wheeler</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-secondary font-bold tracking-tight">$4,315.00 <span class="font-label-sm text-label-sm text-on-surface-variant">MXN</span></div>
+<div class="flex items-center justify-between mt-2">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Por liquidar en caja</span>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container text-on-surface">6 repartidores</span>
+</div>
+</div>
+</div>
+</section>
+<!-- MAIN GRAPHICAL SECTION (7 / 5 Grid) -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Columna Izquierda (7 cols): Ritmo de Ventas y Kilos Despachados -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs mb-space-md">
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface">Ritmo de Ventas y Kilos Despachados</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Distribución por franja horaria con mayor afluencia de 12:00 PM a 3:30 PM</p>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Hoy (kg)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Semana Pasada</span>
+</div>
+</div>
+</div>
+<!-- Custom SVG Timeline Bar & Line Chart -->
+<div class="w-full h-64 relative flex flex-col justify-end">
+<svg class="w-full h-full overflow-visible" preserveAspectRatio="none" viewBox="0 0 700 220">
+<defs>
+<linearGradient id="primaryBarGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#1976d2" stop-opacity="0.95"></stop>
+<stop offset="100%" stop-color="#1976d2" stop-opacity="0.4"></stop>
+</linearGradient>
+<linearGradient id="peakHighlight" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#db322f" stop-opacity="0.95"></stop>
+<stop offset="100%" stop-color="#db322f" stop-opacity="0.3"></stop>
+</linearGradient>
+</defs>
+<!-- Horizontal reference grid lines -->
+<line stroke="#f0eded" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="700" y1="30" y2="30"></line>
+<line stroke="#f0eded" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="700" y1="80" y2="80"></line>
+<line stroke="#f0eded" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="700" y1="130" y2="130"></line>
+<line stroke="#f0eded" stroke-width="1" x1="0" x2="700" y1="180" y2="180"></line>
+<!-- Previous week comparison reference line (grey) -->
+<path d="M 20 170 Q 100 160 170 120 T 320 60 T 470 70 T 620 140 T 680 175" fill="none" stroke="#c1c6d4" stroke-dasharray="6 4" stroke-width="2.5"></path>
+<!-- Bars for today (8 slots: 9am, 10am, 11am, 12pm, 1pm, 2pm, 3pm, 4pm, 5pm) -->
+<!-- 9 AM -->
+<rect fill="url(#primaryBarGrad)" height="30" rx="4" width="34" x="25" y="150"></rect>
+<!-- 10 AM -->
+<rect fill="url(#primaryBarGrad)" height="45" rx="4" width="34" x="95" y="135"></rect>
+<!-- 11 AM -->
+<rect fill="url(#primaryBarGrad)" height="75" rx="4" width="34" x="165" y="105"></rect>
+<!-- 12 PM (Pico) -->
+<rect fill="url(#peakHighlight)" height="135" rx="4" width="34" x="235" y="45"></rect>
+<!-- 1 PM (Pico Max) -->
+<rect fill="url(#peakHighlight)" height="155" rx="4" width="34" x="305" y="25"></rect>
+<!-- 2 PM (Pico) -->
+<rect fill="url(#peakHighlight)" height="142" rx="4" width="34" x="375" y="38"></rect>
+<!-- 3 PM -->
+<rect fill="url(#primaryBarGrad)" height="110" rx="4" width="34" x="445" y="70"></rect>
+<!-- 4 PM -->
+<rect fill="url(#primaryBarGrad)" height="60" rx="4" width="34" x="515" y="120"></rect>
+<!-- 5 PM -->
+<rect fill="url(#primaryBarGrad)" height="35" rx="4" width="34" x="585" y="145"></rect>
+<!-- 6 PM -->
+<rect fill="url(#primaryBarGrad)" height="20" rx="4" width="34" x="650" y="160"></rect>
+<!-- Current Hour Indicator Marker -->
+<circle cx="392" cy="38" fill="#db322f" r="5" stroke="#ffffff" stroke-width="2"></circle>
+</svg>
+<!-- Hour labels -->
+<div class="flex justify-between text-on-surface-variant font-label-sm text-label-sm pt-2">
+<span>9 AM</span>
+<span>10 AM</span>
+<span>11 AM</span>
+<span class="text-secondary font-bold">12 PM</span>
+<span class="text-secondary font-bold">1 PM</span>
+<span class="text-secondary font-bold">2 PM</span>
+<span>3 PM</span>
+<span>4 PM</span>
+<span>5 PM</span>
+<span>6 PM</span>
+</div>
+</div>
+<!-- Quick summary strip underneath -->
+<div class="mt-space-md pt-space-sm bg-surface-container-low px-space-md py-space-sm rounded-lg flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">local_fire_department</span>
+<span class="font-label-md text-label-md text-on-surface">Pico máximo alcanzado: <strong>32.8 kg/hora</strong> entre 1:00 y 2:00 PM</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Capacidad de cazo al 88%</span>
+</div>
+</div>
+<!-- Columna Derecha (5 cols): Distribución de Cortes del Cazo -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="font-headline-sm text-headline-sm text-on-surface">Cortes más Vendidos</div>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant">Hoy: 89.4 kg despachados</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Preferencia de los clientes por tipo de carne en pedidos directos y delivery.</p>
+<!-- Donut & Bars visual split -->
+<div class="flex items-center gap-space-lg mb-space-md">
+<!-- Circular Donut SVG -->
+<div class="relative w-28 h-28 flex-shrink-0 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+<!-- Background circle -->
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4.5"></path>
+<!-- Maciza 38% (#1976d2) -->
+<path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="38, 100" stroke-linecap="round" stroke-width="4.5"></path>
+<!-- Surtida 32% (#db322f) -->
+<path class="text-secondary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="32, 100" stroke-dashoffset="-38" stroke-linecap="round" stroke-width="4.5"></path>
+<!-- Costilla 18% (#fabd00) -->
+<path class="text-tertiary-fixed-dim" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="18, 100" stroke-dashoffset="-70" stroke-linecap="round" stroke-width="4.5"></path>
+<!-- Chicharrón 12% (#717783) -->
+<path class="text-outline" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="12, 100" stroke-dashoffset="-88" stroke-linecap="round" stroke-width="4.5"></path>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">38%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Líder</span>
+</div>
+</div>
+<!-- Quick stats list -->
+<div class="flex-1 space-y-space-xs">
+<div class="flex items-center justify-between text-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-label-md text-label-md text-on-surface">Maciza Especial</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">38% <span class="font-body-sm text-on-surface-variant">(34 kg)</span></span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 38%"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm pt-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+<span class="font-label-md text-label-md text-on-surface">Surtida Tradicional</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">32% <span class="font-body-sm text-on-surface-variant">(28.6 kg)</span></span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 32%"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm pt-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-label-md text-label-md text-on-surface">Costilla Dorada</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">18% <span class="font-body-sm text-on-surface-variant">(16.1 kg)</span></span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-tertiary-fixed-dim h-full rounded-full" style="width: 18%"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm pt-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-outline"></span>
+<span class="font-label-md text-label-md text-on-surface">Chicharrón de Cazo</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">12% <span class="font-body-sm text-on-surface-variant">(10.7 kg)</span></span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-outline h-full rounded-full" style="width: 12%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Recommendation card -->
+<div class="bg-surface-container p-space-sm rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0 mt-0.5">insights</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Alta demanda de <strong class="text-on-surface">Costilla Dorada</strong> para cena. Se recomienda programar tanda adicional en Cazo 2 para las 5:30 PM.
+        </p>
+</div>
+</div>
+</section>
+<!-- LOWER SECTION: 2 EQUAL HIGH-DENSITY CARDS -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- CARD 1: TOP 5 REPARTIDORES DEL DÍA CON MASCOTA DESTACADA -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[24px]">military_tech</span>
+<div class="font-headline-sm text-headline-sm text-on-surface">Top Repartidores del Día</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Flota BautistaGo</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Métricas de velocidad, volumen de comandas entregadas e incidencias registradas.</p>
+<!-- Repartidor Campeón Card (Pablito Bautista con imagen de la mascota) -->
+<div class="bg-gradient-to-r from-primary-fixed/40 via-surface-container-low to-surface-container-lowest p-space-md rounded-xl flex items-center justify-between gap-space-md mb-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="relative flex-shrink-0">
+<img class="w-16 h-16 rounded-full object-cover bg-surface-container-highest shadow-sm" data-alt="Charming cartoon pig mascot riding a bright yellow scooter with delivery box Carnitas Bautista in vibrant vector style wearing a red helmet and blue jacket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkjuhsdE-eYQ7NkdJgKbjNaG-BpzSXs9BCBhIjrXsoNPzi9ZbAPSFkcV6vxpriqYB1aLnZhfQdlNw1ZF01LT607WYocHUz8NAdSeDxnhtpmMWn3LpwTHilmnbM5y7xFGiFosuZ3sTczhn_dZuGg7VsAUhfGHqw881vA1M1oez0YKdQgJimhb3qsfwHtlgO264-u90KUWkRMOg-_an1UkzRsufcSs27LL7fIP-joB8">
+<span class="absolute -top-1 -left-1 w-5 h-5 bg-tertiary-fixed-dim text-on-tertiary-fixed font-label-sm text-label-sm rounded-full flex items-center justify-center font-bold">1</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg text-on-surface">Pablito Bautista</span>
+<span class="px-space-xs py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold">Líder Hoy</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-sm mt-0.5">
+<span>Scooter #04 • Matriz</span>
+<span class="text-primary font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">timer</span> 16.8 min prom
+                </span>
+</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">18 <span class="font-label-sm text-label-sm text-on-surface-variant">pedidos</span></div>
+<div class="font-label-sm text-label-sm text-primary font-semibold">100% puntual • $0 incidencias</div>
+</div>
+</div>
+<!-- Table list for ranks 2 to 5 -->
+<div class="space-y-space-xs">
+<!-- Row 2 -->
+<div class="flex items-center justify-between p-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="w-5 h-5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center justify-center font-bold">2</span>
+<img class="w-8 h-8 rounded-full object-cover" data-alt="Friendly Mexican delivery courier portrait with warm lighting in clean uniform smiling and ready for fast delivery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrdqemqtD4fDPuQOwWubFV1b0T0eS_QdUsTwWBTvLbBGfqp4eteXScI5JdDkYplLYhxRe25pJITbG20EEikjgDq4MD438Lseqt9Lx8S3PjJvMr4jfJWhIdDWXOIKyqDzRO2XMyUqsDwSDFkuU1ZkPd_wNFEHiH5tTZydAFGmZk5cIPC7MCgq-jxVs67Sdte1BadOh83qI2BbXcNyPJSk6aaYHzO1yMLXM2dxTB3ZQ">
+<div>
+<div class="font-label-md text-label-md text-on-surface">Jorge "El Rápido" Morales</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Scooter #02 • 19.4 min prom</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">15 pedidos</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">97% efectividad</span>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="flex items-center justify-between p-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="w-5 h-5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center justify-center font-bold">3</span>
+<img class="w-8 h-8 rounded-full object-cover" data-alt="Young energetic delivery runner wearing helmet with street delivery equipment in natural daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATxG6rn0YrzgVTVa7G7QpE5EXyhig5jd7idAYZjtjObFmEDRcza7T6ZCISCOytqVscD6S-GGYolfU4GdsuB1Q_wrpPPJiklotgUvTpBa3ilO1bRYlWI2ezOCivtu3DvviSmYTD7gg3e2deOoqYmBF1kBllcUmDAhFH9giteclimp8Z58l-_ulYSVDQ3T25jCi9TrKFXTRe3i3XyA5EKiaTsDVOgSW2Cm04_CU2LIs">
+<div>
+<div class="font-label-md text-label-md text-on-surface">Carlos Vega</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Scooter #07 • 21.0 min prom</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">14 pedidos</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">96% efectividad</span>
+</div>
+</div>
+<!-- Row 4 -->
+<div class="flex items-center justify-between p-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="w-5 h-5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center justify-center font-bold">4</span>
+<img class="w-8 h-8 rounded-full object-cover" data-alt="Courier profile photo showing smiling dependable restaurant delivery partner in casual jacket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOvNMwkdtbfUrRk8m_Ung_4kWShJbpLTjlxfgYHmB9wfYzPGIUnW0bqa52My4tkYkxmy0goXkHLzPX8lmZkkYPX4eb_Bi9BZAjxHu55NriWy8spIquzPUVp3vIojL-suxKgJhcYURzBafhM4iko12EGE1OJhwP6dsI5-T3t2XhKDlO5KBCuPceTqt1t-Leo1uGjwcFpZ67hLRSkcl8uMTflzKcTl0hpvcAP6xgbAg">
+<div>
+<div class="font-label-md text-label-md text-on-surface">Manuel "Choco" Ruiz</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Scooter #05 • 23.2 min prom</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">12 pedidos</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">1 demorado</span>
+</div>
+</div>
+<!-- Row 5 -->
+<div class="flex items-center justify-between p-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="w-5 h-5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center justify-center font-bold">5</span>
+<img class="w-8 h-8 rounded-full object-cover" data-alt="Delivery person in professional food service gear with scooter helmet beside them in restaurant setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyF95gOmLIlLtcuqHvvBoVP6RLh_nhLGb64aZ1PNo3ZxGfgZ25AIXr_AmILEex7uCtH4WujeVT9WqMAHksyalV7l4RSYCX3BYQPhr2VAZHavH4v_fJfZTEc2OoM15d2F1iiTLeiuABat5jB8cRJirA4BrnQdtCLa72q1vGus189HsBOamU1EQACMgcWKpTPhZHw0psgnByb-XNL2_D5F_jm7Fpp137Et-MJ2k_4Iw">
+<div>
+<div class="font-label-md text-label-md text-on-surface">Héctor Sánchez</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Scooter #01 • 24.1 min prom</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">11 pedidos</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">1 demorado</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>6 repartidores en turno activo</span>
+<button class="text-primary font-label-md text-label-md hover:underline flex items-center gap-0.5" type="button">
+          Ver panel de despacho completo
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- CARD 2: MONITOREO DE EFICIENCIA DE CAZOS, MERMA E INSUMOS -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">soup_kitchen</span>
+<div class="font-headline-sm text-headline-sm text-on-surface">Eficiencia de Cazos &amp; Insumos Críticos</div>
+</div>
+<span class="px-space-xs py-0.5 bg-primary-container text-on-primary-container font-label-sm text-label-sm rounded uppercase font-semibold">En Servicio</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Control de rendimiento por cazo, merma operativa calculada y stock básico de manteca.</p>
+<!-- Cazos Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md mb-space-md">
+<!-- Cazo 1 (Matriz Principal) -->
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">Cazo 1: Tradicional</span>
+<span class="px-space-xs py-0.5 bg-primary text-on-primary rounded font-label-sm text-label-sm">45 kg procesados</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Maestro Carnicero: Toño Bautista</div>
+<div class="space-y-1 pt-1">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface">
+<span>Rendimiento cazo: 82%</span>
+<span class="text-primary">Merma: 3.2%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 82%"></div>
+</div>
+</div>
+<div class="text-label-sm text-label-sm text-on-surface-variant pt-1 flex items-center justify-between">
+<span>Temperatura: 112°C</span>
+<span class="text-primary font-bold">Salida: Óptima</span>
+</div>
+</div>
+<!-- Cazo 2 (Dorado Rápido) -->
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">Cazo 2: Costilla &amp; Dorados</span>
+<span class="px-space-xs py-0.5 bg-primary text-on-primary rounded font-label-sm text-label-sm">30 kg procesados</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Maestro Carnicero: Memo Cruz</div>
+<div class="space-y-1 pt-1">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface">
+<span>Rendimiento cazo: 79%</span>
+<span class="text-primary">Merma: 4.1%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden">
+<div class="bg-tertiary-container h-full rounded-full" style="width: 79%"></div>
+</div>
+</div>
+<div class="text-label-sm text-label-sm text-on-surface-variant pt-1 flex items-center justify-between">
+<span>Temperatura: 125°C</span>
+<span class="text-on-surface font-semibold">Tanda en cocción</span>
+</div>
+</div>
+</div>
+<!-- Alerta Crítica de Insumo (Manteca al 25%) -->
+<div class="bg-error-container/40 p-space-md rounded-xl flex items-center justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">warning</span>
+</div>
+<div>
+<div class="font-label-md text-label-md text-secondary font-bold">Alerta: Manteca Artesanal al 25%</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Quedan 18 kg en almacén. Requerido para la tanda vespertina de mañana a las 7:00 AM.</p>
+</div>
+</div>
+<button class="px-space-md py-2 bg-secondary text-on-secondary font-label-sm text-label-sm rounded-lg hover:opacity-95 whitespace-nowrap active:scale-95 transition-all" type="button">
+            Solicitar a Proveedor
+          </button>
+</div>
+<!-- Secondary Insumos status bar -->
+<div class="grid grid-cols-3 gap-space-sm pt-space-xs text-center">
+<div class="bg-surface-container p-space-xs rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Tortilla Taquera</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">42 kg • Bien</span>
+</div>
+<div class="bg-surface-container p-space-xs rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Salsa Verde Cocida</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">14 L • 65%</span>
+</div>
+<div class="bg-surface-container p-space-xs rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Salsa Roja de Árbol</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">9 L • 40%</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Auditoría de báscula sincronizada con punto de venta</span>
+<button class="text-primary font-label-md text-label-md hover:underline flex items-center gap-0.5" type="button">
+          Historial de mermas
+          <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+</div></main></div></body></html>

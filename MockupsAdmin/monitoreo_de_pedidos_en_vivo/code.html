@@ -1,0 +1,586 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-container": "#fffdff", "error": "#ba1a1a", "on-secondary-fixed-variant": "#93000d", "tertiary-fixed": "#ffdf9e", "on-tertiary-fixed": "#261a00", "surface-container": "#f0eded", "on-secondary-container": "#fffbff", "primary-fixed": "#d4e3ff", "on-error": "#ffffff", "on-error-container": "#93000a", "outline": "#717783", "inverse-surface": "#303030", "on-surface-variant": "#414752", "surface": "#fcf9f8", "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "on-surface": "#1b1c1c", "background": "#fcf9f8", "tertiary": "#765800", "secondary-container": "#db322f", "on-primary-fixed-variant": "#004786", "error-container": "#ffdad6", "outline-variant": "#c1c6d4", "secondary": "#b7131a", "surface-container-low": "#f6f3f2", "surface-container-highest": "#e5e2e1", "tertiary-container": "#956f00", "primary-container": "#1976d2", "surface-bright": "#fcf9f8", "on-tertiary-fixed-variant": "#5b4300", "surface-container-high": "#eae7e7", "on-secondary-fixed": "#410002", "on-tertiary-container": "#fffdff", "on-background": "#1b1c1c", "surface-dim": "#dcd9d9", "secondary-fixed": "#ffdad6", "primary": "#005dac", "inverse-primary": "#a5c8ff", "secondary-fixed-dim": "#ffb4ac", "inverse-on-surface": "#f3f0ef", "primary-fixed-dim": "#a5c8ff", "on-primary-fixed": "#001c3a", "surface-variant": "#e5e2e1", "tertiary-fixed-dim": "#fabd00", "surface-tint": "#005faf" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-desktop": "1.5rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter": "1rem", "margin": "1rem", "margin-desktop": "2rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-xl": "2rem" }, "fontFamily": { "body-sm": [ "Work Sans" ], "display-lg": [ "Montserrat" ], "body-lg": [ "Work Sans" ], "headline-sm": [ "Montserrat" ], "headline-lg": [ "Montserrat" ], "display-lg-mobile": [ "Montserrat" ], "label-lg": [ "Montserrat" ], "body-md": [ "Work Sans" ], "label-sm": [ "Montserrat" ], "label-md": [ "Montserrat" ], "headline-md": [ "Montserrat" ] }, "fontSize": { "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "display-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "500" } ], "headline-sm": [ "18px", { "lineHeight": "24px", "fontWeight": "600" } ], "headline-lg": [ "26px", { "lineHeight": "32px", "fontWeight": "700" } ], "display-lg-mobile": [ "30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "800" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "headline-md": [ "22px", { "lineHeight": "28px", "fontWeight": "700" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col flex-1 min-h-0"><div class="px-space-lg pt-space-lg pb-space-md flex items-center gap-space-md"><div class="relative flex-shrink-0"><img alt="Profile" class="w-10 h-10 rounded-full object-cover shadow-[0_2px_8px_-2px_rgba(33,33,33,0.12)]" src="https://lh3.googleusercontent.com/aida/AEtjO1XegK1CiDf_9HLum6p6gxZ25R44MGTZbjY6A5Fd3pLsN72II-ri9EOa6_F0zryMq3Kf4aLjTabrxpVmvQc43yIAPumX3A8H_RHYg91Bpo2A0VM_JngMAFh_BltnrojiRieKLTm7DZu7hG31mn0W1vN1OvNmfzjnRg0jI7cBvC_kkfr0I2PSmK9Y-BU6rQmnNJtwHXhK0uA0YpfPGkNgQR_haGhYu1wKZy1cvFkeskdhrmacyWIpBYWlFtlbRkRgRucKXkH2rrUppQ"><span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-primary rounded-full ring-2 ring-surface-container-low"></span></div><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-surface truncate">BautistaGo</span><div class="flex items-center gap-space-xs mt-0.5"><span class="inline-block px-space-xs py-0.5 bg-secondary text-on-secondary rounded font-label-sm text-label-sm uppercase tracking-wide">Propietario / Master</span></div></div></div><div class="px-space-md py-space-xs"><div class="px-space-sm py-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Operación y Gestión</div></div><nav class="flex-1 px-space-md space-y-space-xs overflow-y-auto" data-active-classes="bg-primary-container text-on-primary-container font-label-lg rounded-lg shadow-[0_2px_8px_-2px_rgba(25,118,210,0.25)]"><a class="flex items-center gap-space-md px-space-md py-space-md rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-lg text-label-lg transition-all" data-path="dashboard-analitico" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span>Dashboard Analítico</span></a><a aria-current="page" class="flex items-center justify-between px-space-md py-space-md transition-all bg-primary-container text-on-primary-container font-label-lg rounded-lg shadow-[0_2px_8px_-2px_rgba(25,118,210,0.25)]" data-path="pedidos-en-vivo" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Pedidos en Vivo</span></div><span class="px-space-xs py-0.5 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded-full animate-pulse">14</span></a><a class="flex items-center gap-space-md px-space-md py-space-md rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-lg text-label-lg transition-all" data-path="catalogo-y-precios" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Catálogo y Precios</span></a><a class="flex items-center gap-space-md px-space-md py-space-md rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-lg text-label-lg transition-all" data-path="personal-y-reparto" href="#"><span class="material-symbols-outlined text-[20px]">two_wheeler</span><span>Personal y Reparto</span></a><a class="flex items-center gap-space-md px-space-md py-space-md rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-lg text-label-lg transition-all" data-path="reportes-y-cortes-de-caja" href="#"><span class="material-symbols-outlined text-[20px]">point_of_sale</span><span>Reportes y Cortes</span></a></nav></div><div class="p-space-md bg-surface-container m-space-md rounded-xl"><div class="flex items-center justify-between mb-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Sucursal Activa</span><span class="w-2 h-2 rounded-full bg-primary"></span></div><div class="font-headline-sm text-label-lg text-on-surface truncate">Matriz Centro</div><div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5 mt-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span>En servicio • 3 cazos activos</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full h-10 pl-10 pr-4 bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Buscar folio, cliente, producto, empleado..." type="text"></div></div><div class="flex items-center gap-space-lg"><div class="hidden xl:flex items-center gap-space-sm"><div class="flex items-center gap-2 px-space-md py-1 bg-surface-container-lowest rounded-full shadow-[0_1px_3px_rgba(33,33,33,0.04)]"><span class="material-symbols-outlined text-primary text-[18px]">payments</span><span class="font-body-sm text-body-sm text-on-surface-variant">Hoy:</span><span class="font-label-md text-label-md text-on-surface">$18,420 MXN</span></div><div class="flex items-center gap-2 px-space-md py-1 bg-surface-container-lowest rounded-full shadow-[0_1px_3px_rgba(33,33,33,0.04)]"><span class="material-symbols-outlined text-secondary text-[18px]">local_shipping</span><span class="font-body-sm text-body-sm text-on-surface-variant">Activos:</span><span class="font-label-md text-label-md text-on-surface">14</span></div><div class="flex items-center gap-2 px-space-md py-1 bg-surface-container-lowest rounded-full shadow-[0_1px_3px_rgba(33,33,33,0.04)]"><span class="material-symbols-outlined text-tertiary-container text-[18px]">timer</span><span class="font-body-sm text-body-sm text-on-surface-variant">Prom:</span><span class="font-label-md text-label-md text-on-surface">22 min</span></div></div><div class="flex items-center gap-space-sm pl-space-md"><button class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded-lg transition-colors" title="Alerta sonora en vivo" type="button"><span class="material-symbols-outlined text-[20px]">volume_up</span></button><div class="relative"><button class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded-lg transition-colors" title="Notificaciones" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></button></div><div class="flex items-center gap-space-sm pl-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container" src="https://lh3.googleusercontent.com/aida/AEtjO1XegK1CiDf_9HLum6p6gxZ25R44MGTZbjY6A5Fd3pLsN72II-ri9EOa6_F0zryMq3Kf4aLjTabrxpVmvQc43yIAPumX3A8H_RHYg91Bpo2A0VM_JngMAFh_BltnrojiRieKLTm7DZu7hG31mn0W1vN1OvNmfzjnRg0jI7cBvC_kkfr0I2PSmK9Y-BU6rQmnNJtwHXhK0uA0YpfPGkNgQR_haGhYu1wKZy1cvFkeskdhrmacyWIpBYWlFtlbRkRgRucKXkH2rrUppQ"><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface">Don Román Bautista</span><span class="font-body-sm text-body-sm text-on-surface-variant">Dueño &amp; Fundador</span></div><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div></div></div></header><main class="relative pt-16 w-full px-gutter-desktop py-space-lg bg-background"><div class="flex flex-col w-full">
+<!-- Sub-header / Operative Status Banner -->
+<div class="flex flex-col xl:flex-row xl:items-center xl:justify-between gap-space-md mb-space-lg">
+<div>
+<div class="flex items-center gap-space-sm mb-1">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+          Conexión en vivo (Websocket activo)
+        </span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">• Latencia: 42ms</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+        Tablero de Control de Pedidos en Vivo
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+        Supervisión logística instantánea, balanza de cazo y despacho de flota BautistaGo.
+      </p>
+</div>
+<!-- Quick action toggles & selectors -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-2 bg-surface-container-lowest px-space-md py-2 rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">notifications_active</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">Alerta Sonora</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Nueva comanda</span>
+</div>
+<button aria-label="Alternar alerta sonora" class="ml-2 w-9 h-5 bg-primary rounded-full relative p-0.5 transition-colors focus:outline-none" id="toggle-sound">
+<span class="block w-4 h-4 bg-on-primary rounded-full transition-transform translate-x-4"></span>
+</button>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest px-space-md py-2 rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-outline text-[20px]">storefront</span>
+<select class="bg-transparent font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer">
+<option>Matriz Centro (3 cazos activos)</option>
+<option>Sucursal Perisur</option>
+<option>Express San Ángel</option>
+</select>
+</div>
+<button class="flex items-center gap-2 bg-secondary text-on-secondary px-space-md py-2.5 rounded-xl font-label-lg text-label-lg shadow-sm hover:opacity-95 transition-all active:scale-95">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>+ Comanda Manual</span>
+</button>
+</div>
+</div>
+<!-- Filter Pills Bar with Live Counters -->
+<div class="flex items-center gap-space-sm overflow-x-auto pb-space-sm mb-space-lg scrollbar-none">
+<button class="status-tab flex items-center gap-2 px-space-md py-2 bg-primary text-on-primary rounded-xl font-label-md text-label-md shadow-sm whitespace-nowrap transition-all">
+<span>Todos</span>
+<span class="px-2 py-0.5 bg-on-primary/20 text-on-primary rounded-full font-label-sm text-label-sm">14</span>
+</button>
+<button class="status-tab flex items-center gap-2 px-space-md py-2 bg-surface-container-lowest text-on-surface hover:bg-surface-container-high rounded-xl font-label-md text-label-md shadow-sm whitespace-nowrap transition-all">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span>Nuevos / Por Confirmar</span>
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container rounded-full font-label-sm text-label-sm animate-pulse">2</span>
+</button>
+<button class="status-tab flex items-center gap-2 px-space-md py-2 bg-surface-container-lowest text-on-surface hover:bg-surface-container-high rounded-xl font-label-md text-label-md shadow-sm whitespace-nowrap transition-all">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">soup_kitchen</span>
+<span>En Cazo y Pesaje</span>
+<span class="px-2 py-0.5 bg-surface-container text-on-surface-variant rounded-full font-label-sm text-label-sm">4</span>
+</button>
+<button class="status-tab flex items-center gap-2 px-space-md py-2 bg-surface-container-lowest text-on-surface hover:bg-surface-container-high rounded-xl font-label-md text-label-md shadow-sm whitespace-nowrap transition-all">
+<span class="material-symbols-outlined text-[16px] text-outline">takeout_dining</span>
+<span>Empacado / Listo</span>
+<span class="px-2 py-0.5 bg-surface-container text-on-surface-variant rounded-full font-label-sm text-label-sm">3</span>
+</button>
+<button class="status-tab flex items-center gap-2 px-space-md py-2 bg-surface-container-lowest text-on-surface hover:bg-surface-container-high rounded-xl font-label-md text-label-md shadow-sm whitespace-nowrap transition-all">
+<span class="material-symbols-outlined text-[16px] text-primary">two_wheeler</span>
+<span>En Ruta de Reparto</span>
+<span class="px-2 py-0.5 bg-primary-fixed text-on-primary-fixed rounded-full font-label-sm text-label-sm">5</span>
+</button>
+</div>
+<!-- Main Grid: Live Orders Table (70%) + Expanded Order Drawer / Detail Panel (30%) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl">
+<!-- Table Container (8 cols on lg, 8 cols on xl) -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<!-- Table Header & Live Search Bar inside card -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm p-space-md flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">format_list_bulleted</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Comandas en Curso</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant ml-2">Actualizado hace 3s</span>
+</div>
+<div class="flex items-center gap-space-sm flex-1 max-w-xs">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input class="w-full h-9 pl-9 pr-3 bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Filtrar por folio, cliente..." type="text">
+</div>
+<button class="p-2 bg-surface-container text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" title="Ordenar por tiempo">
+<span class="material-symbols-outlined text-[18px]">sort</span>
+</button>
+</div>
+</div>
+<!-- Orders List Items (Modern Card-Row Format) -->
+<div class="flex flex-col gap-space-sm">
+<!-- ROW 1 (Active Selected: En Ruta) -->
+<div class="order-row cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low/60 rounded-2xl p-space-md shadow-sm transition-all border-l-4 border-primary" data-order-id="BAU-8942">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<!-- Folio, Time & Sla Badge -->
+<div class="flex items-start md:items-center gap-space-md min-w-[210px]">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed/60 text-primary flex flex-col items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">moped</span>
+<span class="font-label-sm text-[9px] leading-none uppercase font-bold">Ruta</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-label-lg text-primary tracking-tight font-bold">#BAU-8942</span>
+<!-- Semáforo Tiempo: Amarillo (19 min) -->
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                    19 min
+                  </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">12:34 PM • Hace 19 min</span>
+</div>
+</div>
+<!-- Client & Items Details -->
+<div class="flex-1 min-w-0 pr-space-sm">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Lic. Fernando Garza</span>
+<span class="text-outline text-body-sm">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Los Laureles #234, Del Valle</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface mt-1 flex flex-wrap items-center gap-1.5">
+<span class="bg-surface-container px-2 py-0.5 rounded text-on-surface font-medium">1/2 kg Surtida</span>
+<span class="bg-surface-container px-2 py-0.5 rounded text-on-surface font-medium">1/4 kg Chicharrón</span>
+<span class="bg-surface-container px-2 py-0.5 rounded text-on-surface-variant font-medium">+2 Boings Guayaba</span>
+</div>
+</div>
+<!-- Price & Payment -->
+<div class="flex flex-col md:text-right min-w-[130px]">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">$335.00</span>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary/10 px-2 py-0.5 rounded mt-0.5 inline-block">
+                Efectivo (Paga $500 • Cambio $165)
+              </span>
+</div>
+<!-- Courier Mini Pill & Action Trigger -->
+<div class="flex items-center gap-space-sm justify-between md:justify-end border-t md:border-t-0 pt-2 md:pt-0 border-surface-container">
+<div class="flex items-center gap-2 bg-surface-container px-2.5 py-1.5 rounded-xl">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Close up photo portrait of a friendly smiling young Mexican delivery courier wearing an orange polo and yellow safety helmet with BautistaGo logo badge" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJW6bA7RV7kPH9m60oV3s88xswhkCIttKhOl0XIWM6_wIQ51xfhGPZ0R_aREiWayivOhQBxeOKKyTN3bsVonXtoE_ldlKgX45SoUvK6YiW4tsBEbWHr4DkD5Z9T9jOoeHk2qymX4hAv3iOmtR_bi8-6c4muEJrJSAR8bwwF6gInETKWgTtkAHyoVvfM--LUyOUf3fZXCZln-7cGASRQk1rdCaVkO1AwaD5_kvBvG0">
+<div class="flex flex-col text-left">
+<span class="font-label-sm text-label-sm text-on-surface leading-tight">Pablito B.</span>
+<span class="font-body-sm text-[11px] text-primary leading-none">1.6 km (7 min)</span>
+</div>
+</div>
+<button class="p-2 rounded-xl bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary transition-colors" title="Ver Detalles">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- ROW 2 (Alerta Demora: Rojo >25 min) -->
+<div class="order-row cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low/60 rounded-2xl p-space-md shadow-sm transition-all border-l-4 border-error" data-order-id="BAU-8939">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start md:items-center gap-space-md min-w-[210px]">
+<div class="w-12 h-12 rounded-xl bg-error-container text-on-error-container flex flex-col items-center justify-center flex-shrink-0 animate-pulse">
+<span class="material-symbols-outlined text-[24px]">soup_kitchen</span>
+<span class="font-label-sm text-[9px] leading-none uppercase font-bold">Cazo</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-label-lg text-on-surface tracking-tight font-bold">#BAU-8939</span>
+<!-- Semáforo Tiempo: Rojo >25 min -->
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+                    28 min • ¡Demora cazo!
+                  </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">12:25 PM • Cazo #2</span>
+</div>
+</div>
+<div class="flex-1 min-w-0 pr-space-sm">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Maricela Orozco</span>
+<span class="text-outline text-body-sm">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Av. Insurgentes Sur #1420 Depto 4B</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface mt-1 flex flex-wrap items-center gap-1.5">
+<span class="bg-surface-container px-2 py-0.5 rounded text-on-surface font-medium">1.0 kg Costilla y Costillar</span>
+<span class="bg-surface-container px-2 py-0.5 rounded text-on-surface font-medium">1/2 kg Cueritos</span>
+<span class="bg-error/10 text-error px-2 py-0.5 rounded text-[11px] font-bold">Faltan tortillas</span>
+</div>
+</div>
+<div class="flex flex-col md:text-right min-w-[130px]">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">$620.00</span>
+<span class="font-label-sm text-label-sm text-primary bg-primary/10 px-2 py-0.5 rounded mt-0.5 inline-block">
+                Tarjeta terminal (Clip)
+              </span>
+</div>
+<div class="flex items-center gap-space-sm justify-between md:justify-end border-t md:border-t-0 pt-2 md:pt-0 border-surface-container">
+<div class="flex items-center gap-2 bg-surface-container px-2.5 py-1.5 rounded-xl">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Portrait of a friendly delivery courier with dark cap smiling against clean delivery depot background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBf5P0WYoGJI4iGtrvwVclrKKAHrkTTBYw9l-Sj4q03Z10w4jd_A0QxfpXVU21itVPv-cpJdRyfhcAgfC9hrZlCux232o2TRusGbyyXYQ7WOEeYqGzVTKY0SqpHTAoUL1I7zYxp9-GmD8yaf5ocU5d4RsDJxAUnOPp6mXDTC5Co73Ck9PhTQ61Kf_gHP4F9ppwTmsedoO2-c9fANHv9BqjqEjjrXMcrd_aew69NwSs">
+<div class="flex flex-col text-left">
+<span class="font-label-sm text-label-sm text-on-surface leading-tight">Beto Solís</span>
+<span class="font-body-sm text-[11px] text-tertiary-container leading-none">Esperando en barra</span>
+</div>
+</div>
+<button class="p-2 rounded-xl bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- ROW 3 (Nuevo / Por Confirmar) -->
+<div class="order-row cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low/60 rounded-2xl p-space-md shadow-sm transition-all border-l-4 border-secondary animate-pulse" data-order-id="BAU-8945">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start md:items-center gap-space-md min-w-[210px]">
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex flex-col items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">receipt</span>
+<span class="font-label-sm text-[9px] leading-none uppercase font-bold">Nuevo</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-label-lg text-secondary tracking-tight font-bold">#BAU-8945</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    2 min • ¡Confirmar!
+                  </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">12:51 PM • Web App</span>
+</div>
+</div>
+<div class="flex-1 min-w-0 pr-space-sm">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Rodrigo Méndez S.</span>
+<span class="text-outline text-body-sm">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Cda. San Jerónimo #55 Int 2</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface mt-1 flex flex-wrap items-center gap-1.5">
+<span class="bg-surface-container px-2 py-0.5 rounded text-on-surface font-medium">1/4 kg Maciza</span>
+<span class="bg-surface-container px-2 py-0.5 rounded text-on-surface font-medium">3 Tacos Campechanos</span>
+<span class="bg-surface-container px-2 py-0.5 rounded text-on-surface-variant font-medium">+ Guacamole grande</span>
+</div>
+</div>
+<div class="flex flex-col md:text-right min-w-[130px]">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">$215.00</span>
+<span class="font-label-sm text-label-sm text-primary bg-primary-fixed text-on-primary-fixed px-2 py-0.5 rounded mt-0.5 inline-block">
+                Pagado Online (Stripe)
+              </span>
+</div>
+<div class="flex items-center gap-space-sm justify-between md:justify-end border-t md:border-t-0 pt-2 md:pt-0 border-surface-container">
+<button class="px-3 py-1.5 bg-secondary text-on-secondary rounded-xl font-label-sm text-label-sm shadow hover:bg-secondary-container transition-colors">
+                Aceptar Comanda
+              </button>
+<button class="p-2 rounded-xl bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- ROW 4 (Empacado / Listo para Asignar) -->
+<div class="order-row cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low/60 rounded-2xl p-space-md shadow-sm transition-all border-l-4 border-outline" data-order-id="BAU-8941">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start md:items-center gap-space-md min-w-[210px]">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-on-surface flex flex-col items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">inventory_2</span>
+<span class="font-label-sm text-[9px] leading-none uppercase font-bold">Empaque</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-label-lg text-on-surface tracking-tight font-bold">#BAU-8941</span>
+<!-- Semáforo Verde (<15 min) -->
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                    11 min
+                  </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">12:42 PM • Barra #1</span>
+</div>
+</div>
+<div class="flex-1 min-w-0 pr-space-sm">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Taller Mecánico 'El Güero'</span>
+<span class="text-outline text-body-sm">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Eje Central Lázaro C. #892</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface mt-1 flex flex-wrap items-center gap-1.5">
+<span class="bg-surface-container px-2 py-0.5 rounded text-on-surface font-medium">2.0 kg Chamorro &amp; Buche</span>
+<span class="bg-surface-container px-2 py-0.5 rounded text-on-surface font-medium">1 kg Tortillas Maíz Azul</span>
+<span class="bg-surface-container px-2 py-0.5 rounded text-on-surface-variant font-medium">Salsa verde picante x3</span>
+</div>
+</div>
+<div class="flex flex-col md:text-right min-w-[130px]">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">$980.00</span>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary/10 px-2 py-0.5 rounded mt-0.5 inline-block">
+                Efectivo exacto
+              </span>
+</div>
+<div class="flex items-center gap-space-sm justify-between md:justify-end border-t md:border-t-0 pt-2 md:pt-0 border-surface-container">
+<button class="px-3 py-1.5 bg-primary text-on-primary rounded-xl font-label-sm text-label-sm shadow hover:bg-primary-container transition-colors">
+                Asignar Repartidor
+              </button>
+<button class="p-2 rounded-xl bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- ROW 5 (En Ruta 2) -->
+<div class="order-row cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low/60 rounded-2xl p-space-md shadow-sm transition-all border-l-4 border-primary" data-order-id="BAU-8938">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start md:items-center gap-space-md min-w-[210px]">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed/60 text-primary flex flex-col items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">moped</span>
+<span class="font-label-sm text-[9px] leading-none uppercase font-bold">Ruta</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-label-lg text-primary tracking-tight font-bold">#BAU-8938</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                    14 min
+                  </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">12:39 PM • Hace 14 min</span>
+</div>
+</div>
+<div class="flex-1 min-w-0 pr-space-sm">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Dra. Claudia Benítez</span>
+<span class="text-outline text-body-sm">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Clínica Ángeles, Cons. 302</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface mt-1 flex flex-wrap items-center gap-1.5">
+<span class="bg-surface-container px-2 py-0.5 rounded text-on-surface font-medium">1/2 kg Maciza magra</span>
+<span class="bg-surface-container px-2 py-0.5 rounded text-on-surface font-medium">1 Chicharrón botanero</span>
+</div>
+</div>
+<div class="flex flex-col md:text-right min-w-[130px]">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">$310.00</span>
+<span class="font-label-sm text-label-sm text-primary bg-primary-fixed text-on-primary-fixed px-2 py-0.5 rounded mt-0.5 inline-block">
+                Transferencia SPEI
+              </span>
+</div>
+<div class="flex items-center gap-space-sm justify-between md:justify-end border-t md:border-t-0 pt-2 md:pt-0 border-surface-container">
+<div class="flex items-center gap-2 bg-surface-container px-2.5 py-1.5 rounded-xl">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Portrait of an energetic Mexican delivery driver smiling wearing a red BautistaGo polo and protective delivery helmet" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDP9uiXcj3-pZBJ-AIEPhwkzYmx31VdbeBKEFEM6n1BP_tmQg-YWfdMHRaezrtdrL8442BSje-W7IBa4qdJX3CFmpA-QME85qrwFlds9KcgpqY0jpCLmjwWTiZqVG83qnd8sh_j1-GTdgvrZkoKYn3p4NHnLHTATQHVN03ROiQRO7NcaYq5DYs_Ow_AUholFbe3TvDdDptL1_bv5Kb_aXYhlmsPwEOsBb-qnbKDpQc">
+<div class="flex flex-col text-left">
+<span class="font-label-sm text-label-sm text-on-surface leading-tight">Chema V.</span>
+<span class="font-body-sm text-[11px] text-primary leading-none">0.8 km (3 min)</span>
+</div>
+</div>
+<button class="p-2 rounded-xl bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Drawer / Inspector Panel: Selected Order #BAU-8942 (4 cols on lg) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-3xl shadow-md p-space-lg sticky top-20 flex flex-col gap-space-md">
+<!-- Header of Selected Order -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 bg-primary text-on-primary rounded-lg font-headline-sm text-label-lg font-bold">#BAU-8942</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Folio Digital</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container rounded-lg transition-colors" title="Imprimir Ticket Térmico">
+<span class="material-symbols-outlined text-[20px]">print</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container rounded-lg transition-colors" title="Compartir vía WhatsApp">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</div>
+<!-- Real-Time Progress Stepper -->
+<div class="bg-surface-container-low p-space-md rounded-2xl">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface font-bold">Estado del Despacho</span>
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">En Ruta (Fase 3/4)</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden flex">
+<div class="bg-primary h-full w-3/4 rounded-full transition-all duration-500"></div>
+</div>
+<div class="flex justify-between items-center text-[10px] font-label-sm text-on-surface-variant mt-2">
+<span>1. Confirmado</span>
+<span>2. Pesaje Cazo</span>
+<span class="text-primary font-bold">3. En Reparto</span>
+<span>4. Entregado</span>
+</div>
+</div>
+<!-- Live Courier & GPS Telemetry Card -->
+<div class="rounded-2xl overflow-hidden bg-surface-container-low p-space-md">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm" data-alt="Portrait of Pablito Bautista the delivery driver in his bright yellow helmet with a scooter background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbSXNBhqbdszwfn7d1lFvgfXw3rxh2DW8p88TdrmyrooKMeiUr6JOWfUvH9kinUBayA5EeojZ99W7AdnHbkE8a0BfE78ldJMlJyzT86JuPSYgl-Ytnl3ZjqeZM_2W-VtExeKrQkZghQvzdQTNK7GnHnFzlx4xCJBl5WKx6AxZWrZ-_KnXlX8mu-NJrb7lRLSj8sE0EvXR6S7txZfGwIIqf8NjLl4lps5TVSPjiGi4">
+<span class="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 bg-primary rounded-full ring-2 ring-surface-container-lowest"></span>
+</div>
+<div>
+<div class="font-headline-sm text-label-lg text-on-surface">Pablito Bautista</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary">two_wheeler</span>
+<span>Vespa Clásica BTO-44</span>
+</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-headline-sm text-label-lg text-primary font-bold">1.6 km</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">~7 minutos</div>
+</div>
+</div>
+<!-- Mini Map Simulation with Data Location -->
+<div class="w-full h-36 rounded-xl bg-cover bg-center relative shadow-inner overflow-hidden mb-3" data-location="Colonia Del Valle, Mexico City, Mexico">
+<div class="absolute inset-0 bg-primary/10 backdrop-blur-[0.5px]"></div>
+<div class="absolute top-2 left-2 bg-surface-container-lowest/90 backdrop-blur-md px-2 py-1 rounded text-on-surface font-label-sm text-[10px] flex items-center gap-1 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span>GPS Activo (18 km/h)</span>
+</div>
+<div class="absolute bottom-2 right-2 bg-primary text-on-primary px-2.5 py-1 rounded-lg font-label-sm text-label-sm shadow flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">navigation</span>
+<span>Por Calle Gabriel Mancera</span>
+</div>
+</div>
+<!-- Courier Actions -->
+<div class="grid grid-cols-2 gap-2">
+<button class="flex items-center justify-center gap-1 py-2 bg-primary text-on-primary rounded-xl font-label-md text-label-md shadow-sm hover:opacity-90 transition-all">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Llamar Repartidor</span>
+</button>
+<button class="flex items-center justify-center gap-1 py-2 bg-surface-container-highest text-on-surface rounded-xl font-label-md text-label-md hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+<span>Reasignar</span>
+</button>
+</div>
+</div>
+<!-- Weighing Breakdown & Kitchen Notes -->
+<div class="bg-surface-container-low p-space-md rounded-2xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">Desglose de Báscula y Cazo</span>
+<span class="font-label-sm text-label-sm text-tertiary-container font-bold">Ticket #088</span>
+</div>
+<div class="space-y-1.5 text-on-surface font-body-sm text-body-sm">
+<div class="flex justify-between items-center py-1 border-b border-surface-container">
+<div>
+<span class="font-medium">1/2 kg Carnitas Surtida</span>
+<div class="text-[11px] text-on-surface-variant">Báscula certificada: 512 grs (Maciza + Cuerito)</div>
+</div>
+<span class="font-label-md text-label-md">$190.00</span>
+</div>
+<div class="flex justify-between items-center py-1 border-b border-surface-container">
+<div>
+<span class="font-medium">1/4 kg Chicharrón Botanero</span>
+<div class="text-[11px] text-on-surface-variant">Crujiente recién escurrido: 260 grs</div>
+</div>
+<span class="font-label-md text-label-md">$95.00</span>
+</div>
+<div class="flex justify-between items-center py-1 border-b border-surface-container">
+<div>
+<span class="font-medium">2x Refresco Boing Guayaba (500ml)</span>
+<div class="text-[11px] text-on-surface-variant">Vidrio bien frío</div>
+</div>
+<span class="font-label-md text-label-md">$50.00</span>
+</div>
+</div>
+<!-- Taquero Chef Notes Highlight -->
+<div class="p-2.5 bg-tertiary-fixed/40 rounded-xl mt-1">
+<div class="flex items-center gap-1.5 text-on-tertiary-fixed font-label-sm text-label-sm font-bold mb-0.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">dinner_dining</span>
+<span>Instrucciones Especiales del Cliente:</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-tertiary-fixed italic">
+              "Por favor tortillas de maíz azul bien calientes envueltas en papel doble y la maciza con orillita doradita del cazo central."
+            </p>
+</div>
+<!-- Total Calculation Summary -->
+<div class="pt-2 flex flex-col gap-1">
+<div class="flex justify-between text-body-sm text-on-surface-variant">
+<span>Subtotal:</span>
+<span>$335.00</span>
+</div>
+<div class="flex justify-between text-body-sm text-on-surface-variant">
+<span>Envío (Zona 1 Del Valle):</span>
+<span class="text-primary font-bold">¡Gratis!</span>
+</div>
+<div class="flex justify-between items-center pt-2 border-t border-surface-container">
+<span class="font-headline-sm text-label-lg font-bold text-on-surface">Total a Cobrar:</span>
+<span class="font-headline-lg text-headline-lg text-secondary font-bold">$335.00 MXN</span>
+</div>
+<div class="flex items-center justify-between text-body-sm bg-secondary-fixed/50 text-on-secondary-fixed px-3 py-1.5 rounded-lg mt-1 font-medium">
+<span>Efectivo: Cliente paga con $500</span>
+<span class="font-bold">Llevar cambio: $165.00</span>
+</div>
+</div>
+<!-- Customer Contact Bar -->
+<div class="pt-2 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[18px]">person</span>
+<span class="font-body-sm text-body-sm text-on-surface">Lic. Fernando Garza (+52 55 4892 1102)</span>
+</div>
+<button class="p-1.5 bg-surface-container text-primary hover:bg-primary hover:text-on-primary rounded-lg transition-colors" title="Llamar Cliente">
+<span class="material-symbols-outlined text-[18px]">phone</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Real-Time Performance & Cash Register Summary Bar -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm p-space-md flex flex-wrap items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-lg">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed/60 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">payments</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Venta Total de Sesión</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">$18,420.00 MXN</span>
+</div>
+</div>
+<div class="hidden sm:flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed/60 text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">timer</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Promedio Preparación Cazo</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">8.4 min</span>
+</div>
+</div>
+<div class="hidden sm:flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">route</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Promedio Despacho y Entrega</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">14.2 min</span>
+</div>
+</div>
+</div>
+<!-- Live Fleet Stats Mini-Widget -->
+<div class="flex items-center gap-space-md ml-auto">
+<div class="flex items-center gap-2">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Repartidores activos:</span>
+<span class="px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-label-md text-label-md font-bold">5 en calle / 2 en base</span>
+</div>
+<button class="flex items-center gap-1.5 px-space-md py-2 bg-surface-container hover:bg-surface-container-high rounded-xl text-on-surface font-label-md text-label-md transition-colors">
+<span class="material-symbols-outlined text-[18px]">map</span>
+<span>Ver Radar de Flota</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Simple interactive simulation for status tabs & sound toggle
+  document.querySelectorAll('.status-tab').forEach(tab => {
+    tab.addEventListener('click', function() {
+      document.querySelectorAll('.status-tab').forEach(t => {
+        t.classList.remove('bg-primary', 'text-on-primary');
+        t.classList.add('bg-surface-container-lowest', 'text-on-surface');
+      });
+      this.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+      this.classList.add('bg-primary', 'text-on-primary');
+    });
+  });
+
+  const soundBtn = document.getElementById('toggle-sound');
+  if (soundBtn) {
+    soundBtn.addEventListener('click', () => {
+      const knob = soundBtn.querySelector('span');
+      if (knob.classList.contains('translate-x-4')) {
+        knob.classList.remove('translate-x-4');
+        knob.classList.add('translate-x-0.5');
+        soundBtn.classList.remove('bg-primary');
+        soundBtn.classList.add('bg-surface-container-high');
+      } else {
+        knob.classList.remove('translate-x-0.5');
+        knob.classList.add('translate-x-4');
+        soundBtn.classList.add('bg-primary');
+        soundBtn.classList.remove('bg-surface-container-high');
+      }
+    });
+  }
+
+  // Row selection visual update
+  document.querySelectorAll('.order-row').forEach(row => {
+    row.addEventListener('click', function() {
+      document.querySelectorAll('.order-row').forEach(r => {
+        r.classList.remove('ring-2', 'ring-primary');
+      });
+      this.classList.add('ring-2', 'ring-primary');
+    });
+  });
+</script></main></div></body></html>
