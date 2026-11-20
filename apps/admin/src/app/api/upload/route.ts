@@ -22,10 +22,15 @@ export async function POST(req: NextRequest) {
     const ext = file.name.endsWith('.webp') ? '.webp' : path.extname(file.name) || '.webp';
     const filename = `corte-${timestamp}-${hash}${ext}`;
 
-    // 1. Si está conectado Vercel Blob (Producción en Vercel)
-    if (process.env.BLOB_READ_WRITE_TOKEN) {
-      const blob = await put(`cortes/${filename}`, file, {
+    // 1. Si está configurado Vercel Blob (Producción o Preview en Vercel)
+    const token = (process.env.BLOB_READ_WRITE_TOKEN || '').trim();
+    if (token) {
+      const bytes = await file.arrayBuffer();
+      const buffer = Buffer.from(bytes);
+
+      const blob = await put(`cortes/${filename}`, buffer, {
         access: 'public',
+        token,
         contentType: file.type || 'image/webp',
         addRandomSuffix: false,
       });
@@ -33,7 +38,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({
         success: true,
         url: blob.url,
-        size: file.size,
+        size: buffer.length,
         filename,
       });
     }
@@ -64,7 +69,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json(
         {
           error:
-            'No fue posible guardar la imagen. En producción (Vercel), asegúrate de tener conectado Vercel Blob (BLOB_READ_WRITE_TOKEN).',
+            'No fue posible guardar la imagen. En Vercel, asegúrate de tener conectada la variable BLOB_READ_WRITE_TOKEN en todos los entornos (Production y Preview).',
         },
         { status: 500 }
       );
@@ -72,7 +77,10 @@ export async function POST(req: NextRequest) {
   } catch (error: any) {
     console.error('Error al procesar subida de imagen:', error);
     return NextResponse.json(
-      { error: 'No fue posible guardar la imagen.', details: error.message },
+      {
+        error: error.message || 'No fue posible guardar la imagen.',
+        details: error.message,
+      },
       { status: 500 }
     );
   }

@@ -103,7 +103,11 @@ export function ProductFormModal({
 
       if (!res.ok) {
         const errPayload = await res.json().catch(() => null);
-        throw new Error(errPayload?.error || 'No fue posible guardar la imagen en el servidor.');
+        const detailedMsg =
+          errPayload?.details && errPayload.details !== errPayload.error
+            ? `${errPayload.error}: ${errPayload.details}`
+            : errPayload?.error || 'No fue posible guardar la imagen en el servidor.';
+        throw new Error(detailedMsg);
       }
 
       const data = await res.json();
